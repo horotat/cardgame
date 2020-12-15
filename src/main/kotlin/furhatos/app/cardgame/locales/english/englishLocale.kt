@@ -60,9 +60,7 @@ val englishLocale = locale(Language.ENGLISH_US) {
         comment_card += "do you have any opinions about @card"
         comment_card += "any ideas about @card"
         comment_card += "what about @card"
-        //comment_card += combine("do you think @card1 IS FAST")
 
-        //TODO: remove entities
         game_done += options(
             "happy with this",
             "this is @finished", "this looks @finished", "think this is @finished", "i think @finished", "we're @finished", "i am @finished",
@@ -278,7 +276,6 @@ val englishLocale = locale(Language.ENGLISH_US) {
         explain_you_can_ask_to_end_game = {
             +"after a few rounds, when the cards look right, let me know and we can check the answer together."
         }
-        // TODO: Rethink this utterance
         ask_where_to_start = {
             +Smile
             +"let's start! "
@@ -320,7 +317,6 @@ val englishLocale = locale(Language.ENGLISH_US) {
                 +"You sure this is right?"
             }
         }
-        // TODO: Try and bring proper inflection to the speech
         lets_continue_discussion = {
             random {
                 +"Alright alright, we can continue for a bit more I guess!"

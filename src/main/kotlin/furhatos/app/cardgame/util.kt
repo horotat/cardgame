@@ -126,20 +126,6 @@ fun cumulativeStandardNormalDistribution(zInput: Double): Double {
     return (1.0 - neg) * y + neg * (1.0 - y)
 }
 
-var logging = false
-
-fun startDialogLogging() {
-    logging = true
-    val currentDateTime = dialogLogger.timestamp("yyyy-MM-dd HH.mm.ss.SSS")
-    // Gabriel's cloud api token
-    dialogLogger.startSession(name = "CardGame-$currentDateTime", cloudToken = "0910367b-5d0e-4d99-a976-57e3a70e2e03")
-}
-
-fun stopDialogLogging() {
-    logging = false
-    dialogLogger.endSession()
-}
-
 fun FlowControlRunner.pauseToLookForAttendingUser(shortWait: Long = 300) {
     when {
         users.current.isAttendingFurhat() -> {

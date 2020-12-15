@@ -25,7 +25,6 @@ val animalSpeedDeckEnglish = deck {
     input {
         singular += "animal"
 
-        //TODO: add these to other decks
         min_def += options("the slowest") / options("animal", "one", "")
         max_def += options("the") / options("fastest", "quickest") / options("animal", "one", "")
 

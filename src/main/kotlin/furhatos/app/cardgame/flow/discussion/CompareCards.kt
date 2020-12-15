@@ -14,7 +14,6 @@ import furhatos.flow.kotlin.state
 fun CompareCards(card1: Card, card2: Card, focusCard1: Boolean = false): State = state(Discussing) {
 
     onEntry {
-        //TODO: be able to attend several locations (incl card2)
         furhat.attend(card1.location)
         // Make a comparison of the two cards
         val comparison = Opinions.getComparison(card1,card2)

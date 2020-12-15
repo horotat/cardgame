@@ -24,7 +24,6 @@ fun ExpressExtreme(highest: Boolean): State = state(Discussing) {
         if (argument != null)
             furhat.say(argument)
         if (opinion.cards.size <= 2) {
-            //TODO: attend several cards
             furhat.attend(opinion.cards[0].location)
             furhat.say {
                 if (argument != null)

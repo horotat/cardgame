@@ -17,10 +17,8 @@ fun SetupGame(deck: Deck) = state(Sleeping) {
         Intent.forgetAll()
         Opinions.forget()
         Card.forgetInitiatives()
-        //startDialogLogging()
         send(ActionDealCards(Game.deckWithCards))
         furhat.attend(GameTable.centerLocation)
-        // "In this game we are supposed to sort these animals based on how fast they can run"
         furhat.say(Game.deck.output.purpose)
         furhat.say(output.explain_order)
         furhat.attendOneOrAll()

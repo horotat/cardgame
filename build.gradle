@@ -41,8 +41,9 @@ version = "0.1.6"
 
 repositories {
     mavenLocal()
-    maven { url "http://furhatrobotics.bintray.com/furhat" }
-    jcenter()
+    mavenCentral()
+    maven { url "https://s3-eu-west-1.amazonaws.com/furhat-maven/releases"}
+    maven { url 'https://repo.gradle.org/gradle/libs-releases' }
 }
 
 // Use latest version of commons

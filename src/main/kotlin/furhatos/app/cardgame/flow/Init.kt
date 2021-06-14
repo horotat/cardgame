@@ -17,9 +17,9 @@ object MatthewNeuralVoice: PollyNeuralVoice.Matthew() {
 
 val Init = state(Parent) {
     onEntry {
-        //flowLogger.start(File("flow.txt"))
+        //flowLogger.start(File("flow.txt"))  // todo: enable during the development of the experiment.
         furhat.setTexture("default")
-        furhat.voice = MatthewNeuralVoice
+        furhat.voice = MatthewNeuralVoice  // todo: change to conversational.
         parallel(abortOnExit = false) {
             goto(TrackUsers)
         }

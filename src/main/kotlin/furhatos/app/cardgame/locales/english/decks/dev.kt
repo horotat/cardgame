@@ -72,18 +72,18 @@ val devDeckEnglish = deck {
             +"the animal living in the warmest climate"
         }}
         is_min = {random {
-            +"is the slowest animal"
-            +"is the slowest one"
+            +"is the animal living in the coldest environment compared to others"
+            +"is the coldest living one"
         }}
         is_max = {random {
-            +"is the fastest animal"
-            +"is the fastest one"
+            +"is the animal living in the warmest climate compared to the others"
+            +"is warmest living climate one"
         }}
         is_less_than = {
-            +"is slower than"
+            +"tolerates colder weather compared to"
         }
         is_more_than = {
-            +"is faster than"
+            +"lives in warmer place than"
         }
     }
 

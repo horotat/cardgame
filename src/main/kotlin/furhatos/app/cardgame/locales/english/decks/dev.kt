@@ -20,7 +20,7 @@ val devDeckEnglish = deck {
 
     imgFolder = "dev"
     name = "Dev"
-    unitLabel = "°C" // Might not be needed, for example if you have YEARS as the unit. Because you don't say "1980 year" or similar, "1980" is enough  // todo: does this work as degree celcius?
+    unitLabel = "°C" // Might not be needed, for example if you have YEARS as the unit. Because you don't say "1980 year" or similar, "1980" is enough  // ask: does this work as degree celcius?
 
     input {
         singular += "animal"
@@ -34,7 +34,7 @@ val devDeckEnglish = deck {
         is_less_than += "lives in colder weather than"
         is_less_than += "is not as warm tolerant as"
         is_less_than += "is not as hot living as"
-        is_less_than += "likes less termperature more than"
+        is_less_than += "likes less temperature more than"
         is_less_than += "wants a chiller temperature compared to"
 
         is_more_than += "is faster than"

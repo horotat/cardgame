@@ -35,12 +35,14 @@ val devDeckEnglish = deck {
         is_less_than += "is not as warm tolerant as"
         is_less_than += "is not as hot living as"
         is_less_than += "likes less temperature more than"
-        is_less_than += "wants a chiller temperature compared to"
+        is_less_than += "wants a chillier temperature compared to"
+        is_less_than += "lives in sauna in the eyes of the"
 
-        is_more_than += "is faster than"
-        is_more_than += "is quicker than"
-        is_more_than += "is lightning compared to"
-        is_more_than += "could run circles around"
+        is_more_than += "lives in warmer weather than"
+        is_more_than += "is not as cold tolerant as"
+        is_more_than += "likes warmth more than"
+        is_more_than += "doesn't like cold as much as"
+        is_more_than += "would freeze where lives the"
     }
 
     output {

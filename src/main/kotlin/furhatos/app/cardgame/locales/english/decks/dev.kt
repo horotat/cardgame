@@ -53,10 +53,11 @@ val devDeckEnglish = deck {
                 +"Okey, In this game we shall arrange these animals by"
             }
             random {
-                +"how fast they can run"
-                +"their running speed"
-                +"their top speed"
-                +"how fast they are"
+                +"the temperature of their habitat"
+                +"their favorite habitat temperature"
+                +"their temperature tolerance"
+                +"which temperature they live in"
+                +"which climate they live in"
             }
         }
         singular = {

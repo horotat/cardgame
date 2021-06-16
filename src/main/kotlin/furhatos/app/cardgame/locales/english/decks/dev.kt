@@ -25,10 +25,10 @@ val devDeckEnglish = deck {
     input {
         singular += "animal"
 
-        min_def += options("the slowest") / options("animal", "one", "")
-        max_def += options("the") / options("fastest", "quickest") / options("animal", "one", "")
+        min_def += options("the coldest climate living") / options("animal", "one", "")
+        max_def += options("the") / options("warmest climate living", "hottest climate living") / options("animal", "one", "")
 
-        is_min_def += options("may be", "might be", "could be", "is") / min_def
+        is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
         is_less_than += "is slower than"

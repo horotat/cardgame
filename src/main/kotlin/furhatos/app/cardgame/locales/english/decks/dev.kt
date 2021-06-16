@@ -16,7 +16,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val animalSpeedDeckEnglish = deck {
+val devDeckEnglish = deck {
 
     imgFolder = "animals"
     name = "Animal speed"

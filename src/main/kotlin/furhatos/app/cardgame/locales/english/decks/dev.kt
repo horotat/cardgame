@@ -106,13 +106,13 @@ val devDeckEnglish = deck {
                 +"Have you?"
             }
             user(Yes()) {
-                robot {+"Wow, sounds interesting. Was ${seenAnimal.def} fast?"}
+                robot {+"Wow, sounds interesting. Was ${seenAnimal.def} chilling on the ice?"}
                 user(Yes(), No(), DontKnow(), Nomatch, proceed = TakeInitiative()) {
                     robot {+"Okay, I see"}
                 }
             }
             user(No(), DontKnow()) {
-                robot {+"Well, then it might be hard for us to know how fast ${seenAnimal.def} is"}
+                robot {+"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef}."}
             }
             user(intent("I have seen them on TV", "I think I have seen them on TV", "I have only seen them on film", "I have seen pictures of them")) {
                 robot {+"Me too. But that's not the same thing as seeing them in real life, I guess."}

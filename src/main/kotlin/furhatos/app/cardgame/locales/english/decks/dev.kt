@@ -31,11 +31,11 @@ val devDeckEnglish = deck {
         is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
-        is_less_than += "is slower than"
-        is_less_than += "is not as fast as"
-        is_less_than += "is not as quick as"
-        is_less_than += "is a snail compared to"
-        is_less_than += "looks like it's standing still compared to"
+        is_less_than += "lives in colder weather than"
+        is_less_than += "is not as warm tolerant as"
+        is_less_than += "is not as hot living as"
+        is_less_than += "likes less termperature more than"
+        is_less_than += "wants a chiller temperature compared to"
 
         is_more_than += "is faster than"
         is_more_than += "is quicker than"

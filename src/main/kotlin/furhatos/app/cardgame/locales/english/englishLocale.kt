@@ -5,10 +5,7 @@ import furhatos.app.cardgame.flow.user
 import furhatos.app.cardgame.game.Game
 import furhatos.app.cardgame.game.GameTable
 import furhatos.app.cardgame.game.OptionList
-import furhatos.app.cardgame.locales.english.decks.animalSpeedDeckEnglish
-import furhatos.app.cardgame.locales.english.decks.desertSurvivalDeckEnglish
-import furhatos.app.cardgame.locales.english.decks.inventionsDeckEnglish
-import furhatos.app.cardgame.locales.english.decks.sugarInFoodEnglish
+import furhatos.app.cardgame.locales.english.decks.*
 import furhatos.gestures.Gestures
 import furhatos.gestures.Gestures.BigSmile
 import furhatos.gestures.Gestures.BrowFrown
@@ -25,7 +22,7 @@ import furhatos.util.Language
 
 val englishLocale = locale(Language.ENGLISH_US) {
 
-    decks = listOf(animalSpeedDeckEnglish, inventionsDeckEnglish, sugarInFoodEnglish, desertSurvivalDeckEnglish)
+    decks = listOf(animalSpeedDeckEnglish, inventionsDeckEnglish, sugarInFoodEnglish, devDeckEnglish)
 
     input {
         ask_about_deck += "what do you think about @deck"

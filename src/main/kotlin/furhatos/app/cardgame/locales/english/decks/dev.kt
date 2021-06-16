@@ -18,9 +18,9 @@ import furhatos.util.Language
 
 val devDeckEnglish = deck {
 
-    imgFolder = "animals"
-    name = "Animal speed"
-    unitLabel = "km/h" // Might not be needed, for example if you have YEARS as the unit. Because you don't say "1980 year" or similar, "1980" is enough
+    imgFolder = "dev"
+    name = "Dev"
+    unitLabel = "°C" // Might not be needed, for example if you have YEARS as the unit. Because you don't say "1980 year" or similar, "1980" is enough  // todo: does this work as degree celcius?
 
     input {
         singular += "animal"

@@ -64,12 +64,12 @@ val devDeckEnglish = deck {
             +"animal"
         }
         min_def = {random {
-            +"the slowest animal"
-            +"the slowest one"
+            +"the animal living in the coldest climate"
+            +"the most low temperature tolerant one"
         }}
         max_def = {random {
-            +"the fastest animal"
-            +"the fastest one"
+            +"the least cold tolerant one"
+            +"the animal living in the warmest climate"
         }}
         is_min = {random {
             +"is the slowest animal"

@@ -158,7 +158,7 @@ val devDeckEnglish = deck {
 
     card {
         id = "camel"
-        truth = 4
+        truth = 40
         image = "question-mark.png"
         name = "Camel"
         def = "the camel"

@@ -130,7 +130,7 @@ val devDeckEnglish = deck {
 
 
         fun RobotTurn.userFollowUp() {  // ask: what is RobotTurn?
-            user(intent("can you elaborate", "I don't understand")) {
+            user(intent("can you elaborate", "I need more details", "give me more information")) {
                 val animal = focusStack[0]
                 robot {
                     include(animal.explanation.randomAvoidRepeat()!!)

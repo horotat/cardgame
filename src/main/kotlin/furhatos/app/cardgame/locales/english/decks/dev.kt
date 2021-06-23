@@ -112,7 +112,7 @@ val devDeckEnglish = deck {
                 }
             }
             user(No(), DontKnow()) {
-                robot {+"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef}."}
+                robot {+"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef} live in."}
             }
             user(intent("I have seen them on TV", "I think I have seen them on TV", "I have only seen them on film", "I have seen pictures of them")) {
                 robot {+"Me too. But that's not the same thing as seeing them in real life, I guess."}
@@ -124,41 +124,9 @@ val devDeckEnglish = deck {
     // Cards. There can be unlimited cards here, but only 5 are selected for each game. A good amount to get variation is minimum 8. Please use the Lion card as a template. It is a good practise to have some cards that are quite extreme, i.e really slow or really fast.
 
     card {
-        id = "zebra"
-        truth = 64
-        image = "zebra.jpg"
-        name = "Zebra"
-
-        def = "the zebra"
-        indef = "a zebra"
-        input += "zebra"
-        input += "the zebra"
-        argument_low += { +"Zebras have stripes to camouflage colourblind predators" }
-        argument_low += { +"Zebras have not been bred for speed" }
-        argument_low += { +"Cars slow down at zebra-crossings, so zebras must be slow too" }
-        argument_high += { +"The Zebra needs to be fast in order to escape predators" }
-        argument_high += { +"Zebras can not be tamed and so must be incredibly fast" }
-        argument_high += { +"people add stripes on fast cars. so all striped things must be fast" }
-
-        initiative {
-            robot {+"Have you ever seen a zebra?"}
-            user(Yes()) {
-                robot {+"That's really cool"}
-            }
-            user(No()) {
-                robot {+"Me neither, maybe we could go to Safari together sometime"}
-            }
-            user {
-                robot {+"Yeah"}
-            }
-        }
-
-    }
-
-    card {
         id = "lion"
-        truth = 80 // The actual speed of the lion..
-        image = "lejon.jpg" // The image of the card
+        truth = 25 // Average lion natural habitat temperature
+        image = "question-mark.png" // The image of the card
         name = "Lion" // Displayed on card
         def = "the lion" // Definitive form ("bestämd form")
         indef = "a lion"
@@ -166,48 +134,11 @@ val devDeckEnglish = deck {
         // All different ways you can say this card in
         input += "lion"
         input += "the lion"
-        argument_low += { +"I think lions seem a bit lazy" }
-        argument_low += { +"I think lions like to sleep a lot during the day" }
-        argument_low += { +"I think lions hunt in packs because they're too slow to hunt alone."}
-        argument_high += { +"The lion needs be fast in order to hunt" }
-        argument_high += { +"The lion looks hungry" }
-        argument_high += { +"Lions are big cats and cats seem very fast" }
-        argument_high += { +"Lions save energy by sleeping up to 22 hours a day" }
-    }
-
-    card {
-        id = "Kangaroo"
-        truth = 71
-        image = "kanguru.jpg"
-        name = "Kangaroo"
-        def = "the kangaroo"
-        indef = "a kangaroo"
-        input += "kangaroo"
-        input += "the kangaroo"
-        argument_low += { +"I am not sure that jumping can get you up to speed" }
-        argument_low += { +"Kangaroo feet look clumsy" }
-        argument_low += { +"Surely jumping is not as effective as running" }
-        argument_high += { +"Kangaroos are super strong." }
-        argument_high += { +"I have heard that kangaroos can jump very quickly" }
-        argument_high += { +"Having big feet could mean that the kangaroo is very fast" }
-    }
-
-    card {
-        id = "tiger"
-        truth = 65
-        image = "tiger.jpg"
-        name = "Tiger"
-        def = "the tiger"
-        indef = "a tiger"
-        input += "tiger"
-        input += "the tiger"
-        argument_low += { +"tigers hunt by ambush so they don't need speed very much" }
-        argument_low += { +"the tiger looks a bit lazy" }
-        argument_low += { +"big cats are usually slow" }
-        argument_high += { +"the tiger needs be fast in order to hunt" }
-        argument_high += { +"the tiger is a predator and must be fast to feed" }
-        argument_high += { +"tigers have really strong legs" }
-        argument_high += { +"a punch from a tiger can kill you" }
+        argument_low += { +"On Mount Elgon, the lion has been recorded up to an elevation of 3600 meters and close to the snow line on Mount Kenya." }
+        argument_low += { +"It seems that lions enjoy chilling under the shade and avoid direct sunlight in their rest." }
+        argument_high += { +"African lions live in scattered populations across Sub-Saharan Africa. It doesn't seem to be a very cold habitat." }
+        argument_high += { +"The lion prefers grassy plains and savannahs, scrub bordering rivers and open woodlands with bushes." }
+        argument_high += { +"It is absent from rainforests and rarely enters closed forests" }
     }
 
     card {
@@ -229,160 +160,55 @@ val devDeckEnglish = deck {
     }
 
     card {
-        id = "giraffe"
-        truth = 60
-        image = "giraff.jpg"
-        name = "Giraffe"
-        def = "the giraffe"
-        indef = "a giraffe"
-        input += "giraffe"
-        input += "the giraffe"
-        argument_low += { +"the giraffe looks a bit clumsy" }
-        argument_low += { +"you wouldn't run fast on stilts" }
-        argument_low += { +"the long giraffe neck must get in the way" }
-        argument_high += { +"the giraffe has very long legs" }
-        argument_high += { +"the giraffe has the longest stride in nature" }
-        argument_high += { +"a giraffe stride can reach four and a half meters" }
+        id = "hamster"
+        truth = 19
+        image = "question-mark.png"
+        name = "Hamster"
+        def = "the hamster"
+        indef = "a hamster"
+        input += "hamster"
+        input += "the hamster"
+        argument_low += { +"Hamsters are nocturnal animals and are active during the night" }
+        argument_low += { +"Hamsters dig their nests under ground. So they don't see so much sun" }
+        argument_high += { +"hamsters get into hibernation when the weather is a little bit cold" }
+        argument_high += { +"Hamsters live near the dessert lines" }
     }
 
     card {
-        id = "rhinoceros"
-        truth = 55
-        image = "_noshorning.jpg"
-        name = "Rhinoceros"
-        def = "the rhinoceros"
-        indef = "a rhinoceros"
-        input += "rhinoceros"
-        input += "the rhinoceros"
-        input += "rhino"
-        input += "the rhino"
-        argument_low += { +"The rhinoceros looks pretty strong, maybe it doesn't have to be very fast" }
-        argument_low += { +"rhinos are too heavy" }
-        argument_low += { +"a rhino can weigh over three tons" }
-        argument_high += { +"Rhinos are really powerful" }
-        argument_high += { +"The rhinoceros looks like it is made of pure muscle" }
-    }
-
-    card {
-        id = "hippo"
-        truth = 30
-        image = "_flodhast.jpg"
-        name = "Hippo"
-        def = "the hippo"
-        indef = "a hippo"
-        input += "hippo"
-        input += "the hippo"
-        argument_low += { +"Hippos closest living relatives are whales" }
-        argument_low += { +"The hippo is very, very heavy" }
-        argument_low += { +"Hippos live in water" }
-        argument_high += { +"Hippos are highly aggressive and unpredictable" }
-        argument_high += { +"The hippo is among the most dangerous animals in the world" }
-    }
-
-    card {
-        id = "elk"
-        truth = 72
-        image = "alg.jpg"
-        name = "Elk"
-        def = "the elk"
-        indef = "an elk"
-        input += "elk"
-        input += "moose"
-        input += "the elk"
-        argument_low += { +"An elk can weigh half a ton" }
-        argument_low += { +"The elk can be slowed down by its big antlers" }
-        argument_low += { +"Elk have tiny legs and huge bodies" }
-        argument_high += { +"The elk is often called the king of the forest" }
-        argument_high += { +"elks are like giant horses with horns" }
-        argument_high += { +"Elk are really graceful" }
-    }
-
-    card {
-        id = "wolverine"
-        truth = 48
-        image = "_jarv.jpg"
-        name = "Wolverine"
-        def = "the wolverine"
-        indef = "a wolverine"
-        input += "wolverine"
-        input += "the wolverine"
-        argument_low += { +"Wolverines have really short legs" }
-        argument_low += { +"The wolverine is not very big" }
-        argument_low += { +"Skunk bear is another name for the wolverine and bears are not that fast" }
-        argument_high += { +"Quickhatch is another name for the wolverine, maybe it is very quick" }
-        argument_high += { +"I hear wolverines have adamantium skeletons" }
-        argument_high += { +"Wolverines can travel 24 kilometers in a day" }
-        argument_high += { +"Wolverine territories can range up to 600 kilometers" }
-    }
-
-    card {
-        id = "wolf"
-        truth = 66
-        image = "varg.jpg"
-        name = "Wolf"
-        def = "the wolf"
-        indef = "a wolf"
-        input += "wolf"
-        input += "wolves"
-        input += "the wolf"
-        argument_low += { +"Wolf packs surround their prey so they don't need speed" }
-        argument_low += { +"A wolf can eat nine kilos of meat in one go" }
-        argument_high += { +"Dogs have evolved from the wolf and can be very fast" }
-        argument_high += { +"The wolf can roam large areas and long distances" }
-        argument_high += { +"The wolf is a great hunter" }
-    }
-
-    card {
-        id = "horse"
-        truth = 88
-        image = "hast.jpg"
-        name = "Horse"
-        def = "the horse"
-        indef = "a horse"
-        input += "horse"
-        input += "the horse"
-        // argument_low += { +"A horse's teeth take up a larger amount of space in their head than their brain" }
-        argument_low += { +"Horses have been domesticated so long they are lazy" }
-        argument_high += { +"Horses are used in racing" }
-        argument_high += { +"Horses are bred to be fast" }
-        argument_high += { +"Humans used horses for fast travelling before the invention of combustion engine" }
-        argument_high += { +"Horses can run within hours after birth" }
-
-        initiative {
-            robot{+"Have you ever ridden a horse?"}
-            user(Yes()) {
-                robot {+"That's nice"}
-            }
-            user(No()) {
-                robot {+"Me neither"}
-            }
-            user {
-                robot {+"yeah"}
-            }
-        }
-    }
-
-    card {
-        id = "slow_loris"
+        id = "camel"
         truth = 4
-        image = "loris.jpg"
-        name = "Slow loris"
-        def = "the slow loris"
-        indef = "a slow loris"
-        input += "slow loris"
-        input += "the slow loris"
-        input += "loris"
-        argument_low += { +"The loris is quite lazy" }
-        argument_low += { +"Having slow in your name should be a clue" }
-        argument_low += { +"The name loris is Dutch and means clown" }
-        argument_high += { +"The loris can travel eight kilometers in one night" }
-        argument_high += { +"A loris home range can be the size of 35 football pitches" }
+        image = "question-mark.png"
+        name = "Camel"
+        def = "the camel"
+        indef = "a camel"
+        input += "camel"
+        input += "the camel"
+        input += "camel"
+        argument_low += { +"Soem camels are found in places with -20 celsius" }
+        argument_high += { +"They live in dry desert climates of the Sahara Desert of Northern Africa, the Middle East, Southwestern Asia and in Indian desert areas." }
+        argument_high += { +"The camels can live in places with low amount of water" }
+    }
+
+    card {
+        id = "dolphin"
+        truth = 21
+        image = "question-mark.png"
+        name = "Dolphin"
+        def = "the dolphin"
+        indef = "a dolphin"
+        input += "dolphin"
+        input += "the dolphin"
+        input += "dolphin"
+        argument_low += { +"they live in water and water in general is colder than the temperature on the ground"}
+        argument_high += { +"dolphins prefer to stay close to the surface of water, which means closer to the sun"}
+        argument_high += { +"dolphins don't live near northern or southern pole waters"}
+
     }
 
     card {
         id = "polar_bear"
-        truth = 40
-        image = "polar_bear.jpg"
+        truth = -10
+        image = "question-mark.png"
         name = "Polar bear"
         def = "the Polar bear"
         indef = "a Polar bear"
@@ -390,12 +216,10 @@ val devDeckEnglish = deck {
         input += "polar bear"
         input += "the polar bear"
 
-        argument_low += { +"Polar bears can weigh 800 kilos" }
-        argument_low += { +"I think Polar bears are quite calm" }
-        argument_low += { +"Polar bears are fat, especially at the start of winter" }
-        argument_high += { +"Polar bears need to be fast in order to escape the melting ice" }
-        argument_high += { +"A polar bear need to be fast to catch their prey" }
-        argument_high += { +"Polar bears can be three meters tall" }
+        argument_low += { +"Polar bears can weigh 800 kilos, most of which is fat" }
+        argument_low += { +"polar bears have black skin over a thick layer of fat that can measure up to 11.4 centimeters" }
+        argument_low += { +"Polar bears are fat, especially at the start of winter to preseve the body heat" }
+        argument_high += { +"They sleep during the whole winter, so they might not be as tolerant to the cold" }
     }
 
 }

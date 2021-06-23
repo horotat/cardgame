@@ -142,24 +142,6 @@ val devDeckEnglish = deck {
     }
 
     card {
-        id = "ostrich"
-        truth = 70
-        image = "struts.jpg"
-        name = "Ostrich"
-        def = "the ostrich"
-        indef = "an ostrich"
-        input += "ostrich"
-        input += "the ostrich"
-        argument_low += { +"those big birds have tiny legs" }
-        argument_low += { +Gestures.Smile; +"the ostrich is not very aerodynamic" }
-        argument_low += { +"the ostrich is the world’s largest bird." }
-        argument_high += { +"ostriches have very long legs" }
-        argument_high += { +"the ostrich can flap wings to go fast" }
-        argument_high += { +"an ostrich can cover five meters in a single stride" }
-        argument_high += { +"ostriches running is aided by having just two toes on each foot" }
-    }
-
-    card {
         id = "hamster"
         truth = 19
         image = "question-mark.png"

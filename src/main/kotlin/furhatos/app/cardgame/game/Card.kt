@@ -42,8 +42,11 @@ class Card(val deck: Deck) {
      */
     val input = options()
 
+    val explanation = utteranceOptions()
+
     val argument_high = utteranceOptions()
     val argument_low = utteranceOptions()
+
 
     var beliefMean: Double = 0.0
     var beliefDev: Double = 0.0

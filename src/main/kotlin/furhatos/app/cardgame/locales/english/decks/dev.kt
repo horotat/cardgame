@@ -1,6 +1,7 @@
 package furhatos.app.cardgame.locales.english.decks
 
 import furhatos.app.cardgame.flow.Nomatch
+import furhatos.app.cardgame.flow.RobotTurn
 import furhatos.app.cardgame.flow.discussion.TakeInitiative
 import furhatos.app.cardgame.flow.user
 import furhatos.app.cardgame.focusStack
@@ -96,6 +97,14 @@ val devDeckEnglish = deck {
             }
         }
 
+        // User asking information about what a particular card is?
+        class AskWhatIs(): Intent() {
+            var card: CardEntity? = null
+            override fun getExamples(lang: Language): List<String> {
+                return listOf("what is @card")  // ask: does it matter to put the question mark or not?
+            }
+        }
+
         user<AskHaveSeenAnimal> {
             val seenAnimal = it.card!!.card!!
             robot {
@@ -119,6 +128,26 @@ val devDeckEnglish = deck {
             }
         }
 
+
+        fun RobotTurn.userFollowUp() {  // ask: what is RobotTurn?
+            user(intent("can you elaborate", "I don't understand")) {
+                val animal = focusStack[0]
+                robot {
+                    include(animal.explanation.randomAvoidRepeat()!!)
+                }
+                userFollowUp()
+            }
+        }
+
+        user<AskWhatIs> {
+            val animal = it.card!!.card!!
+            robot {
+                +{focusStack.prime(animal)}  // ask: what does focus stack do?
+                include(animal.explanation.randomAvoidRepeat()!!)
+            }
+            userFollowUp()
+        }
+
     }
 
     // Cards. There can be unlimited cards here, but only 5 are selected for each game. A good amount to get variation is minimum 8. Please use the Lion card as a template. It is a good practise to have some cards that are quite extreme, i.e really slow or really fast.
@@ -139,6 +168,11 @@ val devDeckEnglish = deck {
         argument_high += { +"African lions live in scattered populations across Sub-Saharan Africa. It doesn't seem to be a very cold habitat." }
         argument_high += { +"The lion prefers grassy plains and savannahs, scrub bordering rivers and open woodlands with bushes." }
         argument_high += { +"It is absent from rainforests and rarely enters closed forests" }
+
+
+        explanation += { +"lion looks yellow and brown"}
+        explanation += { +"this is the second explanation about lions"}
+        explanation += { +"this is the third explanation about lions"}
     }
 
     card {
@@ -154,6 +188,10 @@ val devDeckEnglish = deck {
         argument_low += { +"Hamsters dig their nests under ground. So they don't see so much sun" }
         argument_high += { +"hamsters get into hibernation when the weather is a little bit cold" }
         argument_high += { +"Hamsters live near the dessert lines" }
+
+        explanation += { +"hamsters are small"}
+        explanation += { +"this is the second explanation about hamsters"}
+        explanation += { +"this is the third explanation about hamsters"}
     }
 
     card {
@@ -169,6 +207,10 @@ val devDeckEnglish = deck {
         argument_low += { +"Soem camels are found in places with -20 celsius" }
         argument_high += { +"They live in dry desert climates of the Sahara Desert of Northern Africa, the Middle East, Southwestern Asia and in Indian desert areas." }
         argument_high += { +"The camels can live in places with low amount of water" }
+
+        explanation += { +"camels have humps to store fat on their back"}
+        explanation += { +"this is the second explanation about camels"}
+        explanation += { +"this is the third explanation about camels"}
     }
 
     card {
@@ -184,6 +226,10 @@ val devDeckEnglish = deck {
         argument_low += { +"they live in water and water in general is colder than the temperature on the ground"}
         argument_high += { +"dolphins prefer to stay close to the surface of water, which means closer to the sun"}
         argument_high += { +"dolphins don't live near northern or southern pole waters"}
+
+        explanation += { +"dolphins are mammals living in water"}
+        explanation += { +"dolphins cannot even breath under the water"}
+        explanation += { +"the ancestors of dolphins are ancient elephants who decided to go back to water thousands of years ago"}
 
     }
 
@@ -202,6 +248,10 @@ val devDeckEnglish = deck {
         argument_low += { +"polar bears have black skin over a thick layer of fat that can measure up to 11.4 centimeters" }
         argument_low += { +"Polar bears are fat, especially at the start of winter to preseve the body heat" }
         argument_high += { +"They sleep during the whole winter, so they might not be as tolerant to the cold" }
+
+        explanation += { +"Polar bears sleep all the winter"}
+        explanation += { +"Polar bears are among the very few animals who perceive humans as food"}
+        explanation += { +"their skin is black to store as much sun light as possible but their fur is white as a "}
     }
 
 }

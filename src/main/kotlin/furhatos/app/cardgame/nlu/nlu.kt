@@ -17,6 +17,12 @@ class RequestOpinionIntent : SimpleIntent(input.request_opinion)
 
 class RequestWhyIntent : SimpleIntent(input.request_why)
 
+class pronounceCards: Intent() {
+    override fun getExamples(lang: Language): List<String> {
+        return listOf("can you pronounce the cards?", "pronounce all the cards", "pronounce the cards", "read the cards", "read alound the cards")
+    }
+}
+
 class GameDoneIntent : Intent() {
     var finished: EntityFinished? = null
     var answer: EntityGameSolution? = null

@@ -169,17 +169,41 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
 
     }
 
-    // copy and paste this card below asa the template
+    // read the comments for knowing what these are and what do they do.
+
+    card {
+        id = "lion"  // a simple name here without space, the best is to use the actual word with small letters
+        truth = 0 // put the importance degree here
+        image = "writing.jpg" // It's the same image for all in each deck
+        name = "Lion" // Displayed on card, first letter capital
+        def = "the lion" // Definitive form ("bestämd form"), [ if it is a verb or an adjective, if they have a noun form, try to use that, for example beautiful --> the beauty
+        indef = "a lion" // If indefinite form does not apply you can use the word itself again.
+        gramclass = ""  // the grammatical class of the word, noun, verb, adjective, adverb
+        // All different ways you can say this card in
+        input += "lion"  // again the word
+        input += "the lion" // if it is a noun change this line but if not just delete the line.
+
+        //of the lines below you can add as much of them as you want. So if you have 2 definitions, just copy paste the line below. Works the same for all the others.
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+    // template: you can copy and paste the one below for all of them. It's a clean version without the comments.
 
     card {
         id = "lion"
-        truth = 0 // put the importance degree here
-        image = "writing.jpg" // It's the same image for all
-        name = "Lion" // Displayed on card
-        def = "the lion" // Definitive form ("bestämd form")
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
         indef = "a lion"
+        gramclass = ""
 
-        // All different ways you can say this card in
         input += "lion"
         input += "the lion"
 
@@ -191,4 +215,154 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
 
         example += { +"" }
     }
+
+    // Start the deck here:
+    card {
+        id = "hackneyed"
+        truth = 0
+        image = "writing.jpg"
+        name = "Hackneyed"
+        def = "the hackneyed"
+        indef = "a lion"
+
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
 }

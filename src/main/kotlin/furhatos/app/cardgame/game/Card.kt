@@ -40,6 +40,15 @@ class Card(val deck: Deck) {
     /**
      * Words or phrases the user might say to name the card
      */
+    var gramclass = ""
+    /**
+     * The grammatical class of the card, Noun, Verb, Adjective, Adverb
+     */
+    var frequency: Number = 0
+    /**
+     * the frequency of the word usage in the corpus
+     */
+
     val input = options()
 
     val explanation = utteranceOptions()

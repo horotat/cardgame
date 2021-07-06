@@ -35,7 +35,7 @@ val Sleeping: State = state(Parent) {
             furhat.setDefaultMicroexpression()
             furhat.gesture(Gestures.OpenEyes, priority = 1, async = false)
             // todo: start the log
-            dialogLogger.startSession()
+            // dialogLogger.startSession()
             goto(Greeting)
         }
     }

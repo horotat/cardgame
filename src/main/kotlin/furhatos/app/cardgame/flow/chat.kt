@@ -50,7 +50,7 @@ class RobotTurn(val proceed: State?, val parent: State, val intentInstance: Inte
 
     fun toState(): State = state(parent) {
         onEntry {
-            furhat.say(robotUtterance)
+            furhat.say(utterance = robotUtterance)
             if (userTurns.isEmpty()) {
                 goto(proceed ?: parent)
             } else {

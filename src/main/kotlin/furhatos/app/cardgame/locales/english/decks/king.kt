@@ -17,7 +17,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
+val jobsDeckEnglish = deck {
 
     imgFolder = "writing"
     name = "Writing Review"

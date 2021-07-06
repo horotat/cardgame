@@ -17,7 +17,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
+val writingDeckEnglish = deck {
 
     imgFolder = "writing"
     name = "Writing Review"
@@ -26,28 +26,23 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
     input {
         singular += "writing"
 
-        min_def += options("the coldest climate living") / options("animal", "one", "")
-        max_def += options("the") / options("warmest climate living", "hottest climate living") / options(
-            "animal",
-            "one",
+        min_def += options("the least original") / options("writing", "adjective", "")
+        max_def += options("the") / options("most original", "highest quality") / options(
+            "adjective",
+            "style of writing",
             ""
         )
 
-        is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
-        is_max_def += options("may be", "might be", "could be", "is") / max_def
+        is_min_def += options("I think ", "I guess") / options("may be", "might be", "could be", "is") / min_def
+        is_max_def += options("I think ", "I guess") / options("may be", "might be", "could be", "is") / max_def
 
-        is_less_than += "lives in colder weather than"
-        is_less_than += "is not as warm tolerant as"
-        is_less_than += "is not as hot living as"
-        is_less_than += "likes less temperature more than"
-        is_less_than += "wants a chillier temperature compared to"
-        is_less_than += "lives in sauna in the eyes of the"
+        is_less_than += "is less original than"
+        is_less_than += "is not at original as"
+        is_less_than += "sounds less original than"
 
-        is_more_than += "lives in warmer weather than"
-        is_more_than += "is not as cold tolerant as"
-        is_more_than += "likes warmth more than"
-        is_more_than += "doesn't like cold as much as"
-        is_more_than += "would freeze where lives the"
+        is_more_than += "sounds more original than"
+        is_more_than += "is more original than"
+        is_more_than += "is more unique than"
     }
 
     output {
@@ -66,46 +61,46 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
             }
         }
         singular = {
-            +"animal"
+            +"writing"
         }
         min_def = {
             random {
-                +"the animal living in the coldest climate"
-                +"the most low temperature tolerant one"
+                +"the adjective representing the least originality"
+                +"the adjective showing a writing fully unoriginal"
             }
         }
         max_def = {
             random {
-                +"the least cold tolerant one"
-                +"the animal living in the warmest climate"
+                +"the most original"
+                +"the most unique"
             }
         }
         is_min = {
             random {
-                +"is the animal living in the coldest environment compared to others"
-                +"is the coldest living one"
+                +"is the most original style of writing"
+                +"is the adjective showing the most originality in a work"
             }
         }
         is_max = {
             random {
-                +"is the animal living in the warmest climate compared to the others"
-                +"is warmest living climate one"
+                +"represents the most unique way of writing"
+                +"is the adjective showing the most originality in a work"
             }
         }
         is_less_than = {
-            +"tolerates colder weather compared to"
+            +"is less original compared to"
         }
         is_more_than = {
-            +"lives in warmer place than"
+            +"is more original compared to"
         }
     }
 
     questions {
 
-        class AskHaveSeenAnimal() : Intent() {
+        class AskHaveHeardAdj() : Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("have you ever seen a @card")
+                return listOf("have you ever heard of this adjective, @card")
             }
         }
 
@@ -113,109 +108,59 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         class AskWhatIs() : Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("what is @card")  // ask: does it matter to put the question mark or not?
+                return listOf("what is @card?", "define @card", "what does @card mean?", "what is the definition of @card")
             }
         }
 
-        user<AskHaveSeenAnimal> {
-            val seenAnimal = it.card!!.card!!
+        user<AskHaveHeardAdj> {
+            val heardAdj = it.card!!.card!!
             robot {
-                +attend(seenAnimal.location)
-                +{ focusStack.prime(seenAnimal) }
-                +"No, I don't think I have ever seen ${seenAnimal.indef}."
+                +attend(heardAdj.location)
+                +{ focusStack.prime(heardAdj) }
+                +"No, I don't think I have ever heard ${heardAdj.indef}."
                 +attend(users.current)
                 +"Have you?"
             }
             user(Yes()) {
-                robot { +"Wow, sounds interesting. Was ${seenAnimal.def} chilling on the ice?" }
+                robot { +"Wow, sounds interesting. Was ${heardAdj.def} in a book?" }
                 user(Yes(), No(), DontKnow(), Nomatch, proceed = TakeInitiative()) {
                     robot { +"Okay, I see" }
                 }
             }
             user(No(), DontKnow()) {
-                robot { +"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef} live in." }
+                robot { +"Well, then it might be hard for us to know where ${heardAdj.indef} should be in our list." }
             }
             user(
                 intent(
-                    "I have seen them on TV",
-                    "I think I have seen them on TV",
-                    "I have only seen them on film",
-                    "I have seen pictures of them"
+                    "I have read it",
+                    "I have seen it in a book",
+                    "I think I have."
                 )
             ) {
-                robot { +"Me too. But that's not the same thing as seeing them in real life, I guess." }
+                robot { +"Me too. But that's not the same thing as knowing and using it in a context." }
             }
         }
 
 
-        fun RobotTurn.userFollowUp() {  // ask: what is RobotTurn?
-            user(intent("can you elaborate", "I need more details", "give me more information")) {
-                val animal = focusStack[0]
+        fun RobotTurn.userFollowUp() {
+            user(intent("tell me another definition", "define more", "give me another definition")) {
+                val writing = focusStack[0]
                 robot {
-                    include(animal.explanation.randomAvoidRepeat()!!)
+                    include(writing.definition.randomAvoidRepeat()!!)
                 }
                 userFollowUp()
             }
         }
 
         user<AskWhatIs> {
-            val animal = it.card!!.card!!
+            val writing = it.card!!.card!!
             robot {
-                +{ focusStack.prime(animal) }  // ask: what does focus stack do?
-                include(animal.explanation.randomAvoidRepeat()!!)
+                +{ focusStack.prime(writing) }
+                include(writing.definition.randomAvoidRepeat()!!)
             }
             userFollowUp()
         }
 
-    }
-
-    // read the comments for knowing what these are and what do they do.
-
-    card {
-        id = "lion"  // a simple name here without space, the best is to use the actual word with small letters
-        truth = 0 // put the importance degree here
-        image = "writing.jpg" // It's the same image for all in each deck
-        name = "Lion" // Displayed on card, first letter capital
-        def = "the lion" // Definitive form ("bestämd form"), [ if it is a verb or an adjective, if they have a noun form, try to use that, for example beautiful --> the beauty
-        indef = "a lion" // If indefinite form does not apply you can use the word itself again.
-        gramclass = ""  // the grammatical class of the word, noun, verb, adjective, adverb
-        // All different ways you can say this card in
-        input += "lion"  // again the word
-        input += "the lion" // if it is a noun change this line but if not just delete the line.
-
-        //of the lines below you can add as much of them as you want. So if you have 2 definitions, just copy paste the line below. Works the same for all the others.
-        definition += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
-
-    // template: you can copy and paste the one below for all of them. It's a clean version without the comments.
-
-    card {
-        id = "lion"
-        truth = 0
-        image = "writing.jpg"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
-
-        input += "lion"
-        input += "the lion"
-
-        definition += { +"" }
-
-        example += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
     }
 
     // Start the deck here:

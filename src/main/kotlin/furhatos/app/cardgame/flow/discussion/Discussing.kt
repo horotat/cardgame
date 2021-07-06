@@ -7,6 +7,7 @@ import furhatos.app.cardgame.game.Game
 import furhatos.app.cardgame.nlu.*
 import furhatos.event.senses.SenseSpeechDirection
 import furhatos.flow.kotlin.*
+import furhatos.nlu.common.RequestRepeat
 
 val Discussing = state(Playing) {
 
@@ -27,6 +28,11 @@ val Discussing = state(Playing) {
         gazeShiftLimiter.limitRepeat(1000) {
             furhat.attend(users.getUser(it.userId))
         }
+    }
+
+    onResponse<RequestRepeat> {
+        furhat.say("Sure!")
+        furhat.ask(furhat.dialogHistory.utterances.last().toUtterance())
     }
 
     onResponse(priority = true) {

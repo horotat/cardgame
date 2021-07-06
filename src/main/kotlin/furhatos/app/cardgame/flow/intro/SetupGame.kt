@@ -21,6 +21,14 @@ fun SetupGame(deck: Deck) = state(Sleeping) {
         furhat.attend(GameTable.centerLocation)
         furhat.say(Game.deck.output.purpose)
         furhat.say(output.explain_order)
+        furhat.say {
+            +"I once read aloud the cards for you. They are pronounced as: "
+            +delay(1000)
+            for (card in Game.cardSet.currentOrder) {
+                +card.name
+                +delay(1000)
+            }
+        }
         furhat.attendOneOrAll()
         goto(StartDiscussing)
     }

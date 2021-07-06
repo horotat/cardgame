@@ -17,7 +17,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
+val funeralDeckEnglish = deck {
 
     imgFolder = "writing"
     name = "Writing Review"
@@ -196,140 +196,136 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
 
     // Start the deck here:
     card {
-        id = ""
+        id = "exultant"
         truth = 0
         image = "question-mark.png"
-        name = ""
-        def = "being hackneyed"
-        indef = "a hackneyed writing"
+        name = "Exultant"
+        def = "being exultant"
+        indef = "an exultant person"
 
         gramclass = "adjective"
 
-        input += "hackneyed"
-        input += "being hackneyed"
+        input += "exultant"
+        input += "being exultant"
 
-        definition += { +"" }
+        definition += { +"Being exultant means feeling or showing that you are very proud or happy, especially because of something exciting that has happened" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"he waved to the exultant crowds" }
+        example += { +"They were exultant over their victory." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "ebullient"
+        truth = 1
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Ebullient"
+        def = "being ebullient"
+        indef = "an ebullient person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "ebullient"
+        input += "being ebullient"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Someone ebullient is full of confidence, energy and good humour" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"She sounded as ebullient and happy as ever." }
+        example += { +"Charlie’s ebullient attitude made him a favorite in the office." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "cogent"
+        truth = 2
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Cogent"
+        def = "being cogent"
+        indef = "a cogent person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "cogent"
+        input += "being cogent"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Cogent means persuasive and well expressed." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"Your article provides cogent reading." }
+        example += { +"But it has no cogent, lucid scheme to engage us" }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "amicable"
+        truth = 3
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Amicable"
+        def = "being amicable"
+        indef = "an amicable person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "amicable"
+        input += "being amicable"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Something that is amicable is done or achieved in a polite or friendly way and without arguing" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"In spite of their disagreement they parted on amicable terms" }
+        example += { +" I can tell you that the meeting was professional, efficient and amicable." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "lugubrious"
+        truth = 4
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Lugubrious"
+        def = "being lugubrious"
+        indef = "a lugubrious person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "lugubrious"
+        input += "being lugubrious"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Being lugubrious means being sad and serious." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"his face looked even more lugubrious than usual" }
+        example += { +"Just because I’m a bit down today doesn’t mean I’m in a lugubrious mood!" }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "disconsolate"
+        truth = 5
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Disconsolate"
+        def = "being disconsolate"
+        indef = "a disconsolate person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "disconsolate"
+        input += "being disconsolate"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Somebody who is disconsolate is very unhappy and disappointed." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"she left Fritz looking disconsolate" }
+        example += { +"The disconsolate players left for home without a trophy." }
     }
 
 }

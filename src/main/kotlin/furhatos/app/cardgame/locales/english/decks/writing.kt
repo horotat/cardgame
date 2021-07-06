@@ -93,11 +93,17 @@ val writingDeckEnglish = deck {
             }
         }
 
-        // User asking information about what a particular card is?
         class AskWhatIs() : Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
                 return listOf("what is @card?", "define @card", "what does @card mean?", "what is the definition of @card")
+            }
+        }
+
+        class AskExample(): Intent() {
+            var card: CardEntity? = null
+            override fun getExamples(lang: Language): List<String> {
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?" )
             }
         }
 
@@ -131,13 +137,13 @@ val writingDeckEnglish = deck {
         }
 
 
-        fun RobotTurn.userFollowUp() {
+        fun RobotTurn.userFollowUpDefinition() {
             user(intent("tell me another definition", "define more", "give me another definition")) {
                 val writing = focusStack[0]
                 robot {
                     include(writing.definition.randomAvoidRepeat()!!)
                 }
-                userFollowUp()
+                userFollowUpDefinition()
             }
         }
 
@@ -147,7 +153,26 @@ val writingDeckEnglish = deck {
                 +{ focusStack.prime(writing) }
                 include(writing.definition.randomAvoidRepeat()!!)
             }
-            userFollowUp()
+            userFollowUpDefinition()
+        }
+
+        fun RobotTurn.userFollowUpExample() {
+            user(intent("another example", "can you tell me another sentence?", "give me another instance", "tell me another example", "I want more examples", "try another example", "could you tell me another one?")) {
+                val writing = focusStack[0]
+                robot {
+                    include(writing.example.randomAvoidRepeat()!!)
+                }
+                userFollowUpExample()
+            }
+        }
+
+        user<AskExample> {
+            val writing = it.card!!.card!!
+            robot {
+                +{ focusStack.prime(writing) }
+                include(writing.example.randomAvoidRepeat()!!)
+            }
+            userFollowUpExample()
         }
 
     }

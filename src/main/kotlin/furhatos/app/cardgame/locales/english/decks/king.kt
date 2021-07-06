@@ -26,7 +26,7 @@ val jobsDeckEnglish = deck {
     input {
         singular += "writing"
 
-        min_def += options("the coldest climate living") / options("animal", "one", "")
+        min_def += options("the coldest climate living") / options("animal", "one", "")  // t
         max_def += options("the") / options("warmest climate living", "hottest climate living") / options(
             "animal",
             "one",

@@ -199,132 +199,15 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         id = ""
         truth = 0
         image = "writing.jpg"
-        name = "Hackneyed"
+        name = ""
         def = "being hackneyed"
-        indef = "a hackneyed writing"  // this is an example, I am not sure how it will turn out. When we finish the first deck we will decide how to tread adjectives and adverbs and verbs
+        indef = "a hackneyed writing"
 
         gramclass = "adjective"
 
         input += "hackneyed"
         input += "being hackneyed"
 
-        definition += { +"Hackneyed means something being used too often and therefore it is boring." }
-
-        argument_low += { +"This is a very negative thing to say about someone’s writing, since it implies that it’s boring. " }
-        argument_low += { +"I think it would be very rude to say that someone’s writing overuses repetitive tropes. " }
-
-        argument_high += { +"Lots of authors try to write things similar to what others have written, so this seems like a good compliment. " }
-        argument_high += { +" I think it’s a positive quality for writing to reuse ideas that have been used many times before. " }
-
-        example += { +"The artist should be careful to avoid hackneyed subjects." }
-        example += { +"The plot of the film is just a hackneyed boy-meets-girl scenario." }
-    }
-
-
-    card {
-        id = "trite"
-        truth = 1
-        image = "writing.jpg"
-        name = "Trite"
-        def = "being trite"
-        indef = "a trite writing"
-        gramclass = "adjective"
-        input += "trite"
-        input += "being trite"
-
-        definition += { +"Being trite means being boring because it has been expressed so many times before, it is unoriginal" }
-
-        argument_low += { +"Calling someone’s writing unoriginal seems pretty insulting." }
-        argument_low += { +"A word that means boring and not original does not seem like much of a compliment." }
-
-        argument_high += { +"It seems like a good thing to be told that your work is nothing new." }
-        argument_high += { +"I think that an author might really appreciate being told that their writing has ideas that have been expressed a lot of times." }
-
-        example += { +"this point may now seem obvious and trite" }
-        example += { +"She seemed bored and asked trite questions" }
-    }
-
-
-    card {
-        id = "derivative"
-        truth = 2
-        image = "writing.jpg"
-        name = "Derivative"
-        def = "being derivative"
-        indef = "a derivative writing"
-        gramclass = "adjective"
-        input += "derivative"
-        input += "beign derivative"
-
-        definition += { +"Something derivative is imitative of the work of another artist, writer, etc., and usually disapproved of for that reason." }
-
-        argument_low += { +"Accusing an author of copying others’ work doesn’t seem like much of a compliment." }
-        argument_low += { +"Do you really think an author would like to be told that they’re just imitating the work of others?" }
-
-        argument_high += { +"They do say that imitation is the sincerest form of flattery, so it seems like being derivative would be a good thing." }
-        argument_high += { +"I think an author would like to hear that their work seems very similar to that of others." }
-
-        example += { +"His work was so derivative that it lacked any originality." }
-        example += { +"She didn’t contribute anything new; her work was completely derivative." }
-    }
-
-
-    card {
-        id = "prosaic"
-        truth = 3
-        image = "writing.jpg"
-        name = "Prosaic"
-        def = "being prosaic"
-        indef = "a prosaic writing"
-        gramclass = "adjective"
-        input += "prosaic"
-        input += "being prosaic"
-
-        definition += { +"Prosaic means ordinary and not showing any imagination." }
-
-        argument_low += { +"Do you really think anyone would appreciate being told their work is “ordinary”?" }
-        argument_low += { +"Saying that an author’s work doesn’t show imagination seems fairly rude." }
-
-        argument_high += { +" I think an author would like to hear that their work is ordinary." }
-        argument_high += { +"A lack of imagination seems like something most authors would strive for." }
-
-        example += { +"the masses were too preoccupied by prosaic day-to-day concerns" }
-        example += { +"prosaic language can't convey the experience" }
-    }
-
-
-    card {
-        id = "perspicuous"
-        truth = 4
-        image = "writing.jpg"
-        name = "Perspicuous"
-        def = "being perspicuous"
-        indef = "a perspicuous writing"
-        gramclass = "adjective"
-        input += "perspicuous"
-        input += "being perspicuous"
-
-        definition += { +"Something perspicuous is transparently clear and easily understandable." }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
-
-
-    card {
-        id = "adroit"
-        truth = 5
-        image = "writing.jpg"
-        name = "Adroit"
-        def = "being adroit"
-        indef = "an adroit writing"
-        gramclass = "adjective"
-        input += "adroit"
-        input += "being adroit"
-
         definition += { +"" }
 
         argument_low += { +"" }
@@ -334,19 +217,113 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"" }
     }
 
-
     card {
-        id = "peerless"
-        truth = 6
+        id = "lion"
+        truth = 0
         image = "writing.jpg"
-        name = "Peerless"
-        def = "being peerless"
-        indef = "a peerless writing"
-        gramclass = "adjective"
-        input += "peerless"
-        input += "being peerless"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
 
         definition += { +"" }
+
+        example += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        example += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        example += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        example += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+    }
+
+    card {
+        id = "lion"
+        truth = 0
+        image = "writing.jpg"
+        name = "Lion"
+        def = "the lion"
+        indef = "a lion"
+        gramclass = ""
+
+        input += "lion"
+        input += "the lion"
+
+        definition += { +"" }
+
+        example += { +"" }
 
         argument_low += { +"" }
 

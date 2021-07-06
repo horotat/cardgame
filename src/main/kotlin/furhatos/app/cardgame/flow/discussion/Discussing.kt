@@ -31,7 +31,6 @@ val Discussing = state(Playing) {
     }
 
     onResponse<RequestRepeat> {
-        furhat.say("Sure!")
         furhat.ask(furhat.dialogHistory.utterances.last().toUtterance())
     }
 

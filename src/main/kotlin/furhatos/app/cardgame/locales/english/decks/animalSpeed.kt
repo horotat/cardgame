@@ -1,11 +1,11 @@
 package furhatos.app.cardgame.locales.english.decks
 
 import furhatos.app.cardgame.flow.Nomatch
+import furhatos.app.cardgame.flow.RobotTurn
 import furhatos.app.cardgame.flow.discussion.TakeInitiative
 import furhatos.app.cardgame.flow.user
 import furhatos.app.cardgame.focusStack
 import furhatos.app.cardgame.game.deck
-import furhatos.app.cardgame.locales.english.englishLocale
 import furhatos.app.cardgame.nlu.CardEntity
 import furhatos.app.cardgame.options
 import furhatos.gestures.Gestures
@@ -93,6 +93,13 @@ val animalSpeedDeckEnglish = deck {
             }
         }
 
+        class AskWhatIs(): Intent() {
+            var card: CardEntity? = null
+            override fun getExamples(lang: Language): List<String> {
+                return listOf("what is @card")
+            }
+        }
+
         user<AskHaveSeenAnimal> {
             val seenAnimal = it.card!!.card!!
             robot {
@@ -116,6 +123,27 @@ val animalSpeedDeckEnglish = deck {
             }
         }
 
+        fun RobotTurn.userFollowUp() {
+            user(intent("can you elaborate", "I need more details", "give me more information")) {
+                val animal = focusStack[0]
+                robot {
+                    include(animal.explanation.randomAvoidRepeat()!!)
+                }
+                userFollowUp()
+            }
+        }
+
+        user<AskWhatIs> {
+            val animal = it.card!!.card!!
+            robot {
+                +{focusStack.prime(animal)}
+                include(animal.explanation.randomAvoidRepeat()!!)
+            }
+            userFollowUp()
+        }
+
+
+
     }
 
     // Cards. There can be unlimited cards here, but only 5 are selected for each game. A good amount to get variation is minimum 8. Please use the Lion card as a template. It is a good practise to have some cards that are quite extreme, i.e really slow or really fast.
@@ -136,6 +164,8 @@ val animalSpeedDeckEnglish = deck {
         argument_high += { +"The Zebra needs to be fast in order to escape predators" }
         argument_high += { +"Zebras can not be tamed and so must be incredibly fast" }
         argument_high += { +"people add stripes on fast cars. so all striped things must be fast" }
+
+        explanation += {+"A zebra is like a horse with black and white stripes"}
 
         initiative {
             robot {+"Have you ever seen a zebra?"}

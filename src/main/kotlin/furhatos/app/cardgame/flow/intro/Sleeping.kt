@@ -4,11 +4,9 @@ import furhatos.app.cardgame.*
 import furhatos.app.cardgame.flow.Parent
 import furhatos.app.cardgame.flow.updateUsersOnGUI
 import furhatos.autobehavior.setDefaultMicroexpression
+import furhatos.event.EventSystem
 import furhatos.event.senses.SenseSkillGUIConnected
-import furhatos.flow.kotlin.State
-import furhatos.flow.kotlin.furhat
-import furhatos.flow.kotlin.state
-import furhatos.flow.kotlin.users
+import furhatos.flow.kotlin.*
 import furhatos.gestures.Gestures
 import furhatos.records.Location
 
@@ -36,6 +34,8 @@ val Sleeping: State = state(Parent) {
             send(ActionHideButton())
             furhat.setDefaultMicroexpression()
             furhat.gesture(Gestures.OpenEyes, priority = 1, async = false)
+            // todo: start the log
+            dialogLogger.startSession()
             goto(Greeting)
         }
     }

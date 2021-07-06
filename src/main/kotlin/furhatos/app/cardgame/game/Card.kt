@@ -43,6 +43,8 @@ class Card(val deck: Deck) {
     val input = options()
 
     val explanation = utteranceOptions()
+    val definition = utteranceOptions()  // ask: how to make the rebot to not utter this randomly and just give it as an answer to the definition asked?
+    val example = utteranceOptions()
 
     val argument_high = utteranceOptions()
     val argument_low = utteranceOptions()

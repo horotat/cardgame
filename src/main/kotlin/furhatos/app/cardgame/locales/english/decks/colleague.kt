@@ -17,7 +17,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
+val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
 
     imgFolder = "writing"
     name = "Writing Review"
@@ -169,30 +169,6 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
 
     }
 
-    // read the comments for knowing what these are and what do they do.
-
-    card {
-        id = "lion"  // a simple name here without space, the best is to use the actual word with small letters
-        truth = 0 // put the importance degree here
-        image = "writing.jpg" // It's the same image for all in each deck
-        name = "Lion" // Displayed on card, first letter capital
-        def = "the lion" // Definitive form ("bestämd form"), [ if it is a verb or an adjective, if they have a noun form, try to use that, for example beautiful --> the beauty
-        indef = "a lion" // If indefinite form does not apply you can use the word itself again.
-        gramclass = ""  // the grammatical class of the word, noun, verb, adjective, adverb
-        // All different ways you can say this card in
-        input += "lion"  // again the word
-        input += "the lion" // if it is a noun change this line but if not just delete the line.
-
-        //of the lines below you can add as much of them as you want. So if you have 2 definitions, just copy paste the line below. Works the same for all the others.
-        definition += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
-
     // template: you can copy and paste the one below for all of them. It's a clean version without the comments.
 
     card {
@@ -220,7 +196,7 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
 
     // Start the deck here:
     card {
-        id = "hackneyed"
+        id = ""
         truth = 0
         image = "writing.jpg"
         name = "Hackneyed"
@@ -232,13 +208,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "hackneyed"
         input += "being hackneyed"
 
-        definition += { +"" }
+        definition += { +"Hackneyed means something being used too often and therefore it is boring." }
 
-        argument_low += { +"" }
+        argument_low += { +"This is a very negative thing to say about someone’s writing, since it implies that it’s boring. " }
+        argument_low += { +"I think it would be very rude to say that someone’s writing overuses repetitive tropes. " }
 
-        argument_high += { +"" }
+        argument_high += { +"Lots of authors try to write things similar to what others have written, so this seems like a good compliment. " }
+        argument_high += { +" I think it’s a positive quality for writing to reuse ideas that have been used many times before. " }
 
-        example += { +"" }
+        example += { +"The artist should be careful to avoid hackneyed subjects." }
+        example += { +"The plot of the film is just a hackneyed boy-meets-girl scenario." }
     }
 
 
@@ -253,13 +232,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "trite"
         input += "being trite"
 
-        definition += { +"" }
+        definition += { +"Being trite means being boring because it has been expressed so many times before, it is unoriginal" }
 
-        argument_low += { +"" }
+        argument_low += { +"Calling someone’s writing unoriginal seems pretty insulting." }
+        argument_low += { +"A word that means boring and not original does not seem like much of a compliment." }
 
-        argument_high += { +"" }
+        argument_high += { +"It seems like a good thing to be told that your work is nothing new." }
+        argument_high += { +"I think that an author might really appreciate being told that their writing has ideas that have been expressed a lot of times." }
 
-        example += { +"" }
+        example += { +"this point may now seem obvious and trite" }
+        example += { +"She seemed bored and asked trite questions" }
     }
 
 
@@ -274,13 +256,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "derivative"
         input += "beign derivative"
 
-        definition += { +"" }
+        definition += { +"Something derivative is imitative of the work of another artist, writer, etc., and usually disapproved of for that reason." }
 
-        argument_low += { +"" }
+        argument_low += { +"Accusing an author of copying others’ work doesn’t seem like much of a compliment." }
+        argument_low += { +"Do you really think an author would like to be told that they’re just imitating the work of others?" }
 
-        argument_high += { +"" }
+        argument_high += { +"They do say that imitation is the sincerest form of flattery, so it seems like being derivative would be a good thing." }
+        argument_high += { +"I think an author would like to hear that their work seems very similar to that of others." }
 
-        example += { +"" }
+        example += { +"His work was so derivative that it lacked any originality." }
+        example += { +"She didn’t contribute anything new; her work was completely derivative." }
     }
 
 
@@ -295,13 +280,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "prosaic"
         input += "being prosaic"
 
-        definition += { +"" }
+        definition += { +"Prosaic means ordinary and not showing any imagination." }
 
-        argument_low += { +"" }
+        argument_low += { +"Do you really think anyone would appreciate being told their work is “ordinary”?" }
+        argument_low += { +"Saying that an author’s work doesn’t show imagination seems fairly rude." }
 
-        argument_high += { +"" }
+        argument_high += { +" I think an author would like to hear that their work is ordinary." }
+        argument_high += { +"A lack of imagination seems like something most authors would strive for." }
 
-        example += { +"" }
+        example += { +"the masses were too preoccupied by prosaic day-to-day concerns" }
+        example += { +"prosaic language can't convey the experience" }
     }
 
 
@@ -316,7 +304,7 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "perspicuous"
         input += "being perspicuous"
 
-        definition += { +"" }
+        definition += { +"Something perspicuous is transparently clear and easily understandable." }
 
         argument_low += { +"" }
 

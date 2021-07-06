@@ -232,13 +232,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "hackneyed"
         input += "being hackneyed"
 
-        definition += { +"" }
+        definition += { +"Hackneyed means something being used too often and therefore it is boring." }
 
-        argument_low += { +"" }
+        argument_low += { +"This is a very negative thing to say about someone’s writing, since it implies that it’s boring. " }
+        argument_low += { +"I think it would be very rude to say that someone’s writing overuses repetitive tropes. " }
 
-        argument_high += { +"" }
+        argument_high += { +"Lots of authors try to write things similar to what others have written, so this seems like a good compliment. " }
+        argument_high += { +" I think it’s a positive quality for writing to reuse ideas that have been used many times before. " }
 
-        example += { +"" }
+        example += { +"The artist should be careful to avoid hackneyed subjects." }
+        example += { +"The plot of the film is just a hackneyed boy-meets-girl scenario." }
     }
 
 
@@ -253,13 +256,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "trite"
         input += "being trite"
 
-        definition += { +"" }
+        definition += { +"Being trite means being boring because it has been expressed so many times before, it is unoriginal" }
 
-        argument_low += { +"" }
+        argument_low += { +"Calling someone’s writing unoriginal seems pretty insulting." }
+        argument_low += { +"A word that means boring and not original does not seem like much of a compliment." }
 
-        argument_high += { +"" }
+        argument_high += { +"It seems like a good thing to be told that your work is nothing new." }
+        argument_high += { +"I think that an author might really appreciate being told that their writing has ideas that have been expressed a lot of times." }
 
-        example += { +"" }
+        example += { +"this point may now seem obvious and trite" }
+        example += { +"She seemed bored and asked trite questions" }
     }
 
 
@@ -274,13 +280,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "derivative"
         input += "beign derivative"
 
-        definition += { +"" }
+        definition += { +"Something derivative is imitative of the work of another artist, writer, etc., and usually disapproved of for that reason." }
 
-        argument_low += { +"" }
+        argument_low += { +"Accusing an author of copying others’ work doesn’t seem like much of a compliment." }
+        argument_low += { +"Do you really think an author would like to be told that they’re just imitating the work of others?" }
 
-        argument_high += { +"" }
+        argument_high += { +"They do say that imitation is the sincerest form of flattery, so it seems like being derivative would be a good thing." }
+        argument_high += { +"I think an author would like to hear that their work seems very similar to that of others." }
 
-        example += { +"" }
+        example += { +"His work was so derivative that it lacked any originality." }
+        example += { +"She didn’t contribute anything new; her work was completely derivative." }
     }
 
 
@@ -295,13 +304,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "prosaic"
         input += "being prosaic"
 
-        definition += { +"" }
+        definition += { +"Prosaic means ordinary and not showing any imagination." }
 
-        argument_low += { +"" }
+        argument_low += { +"Do you really think anyone would appreciate being told their work is “ordinary”?" }
+        argument_low += { +"Saying that an author’s work doesn’t show imagination seems fairly rude." }
 
-        argument_high += { +"" }
+        argument_high += { +" I think an author would like to hear that their work is ordinary." }
+        argument_high += { +"A lack of imagination seems like something most authors would strive for." }
 
-        example += { +"" }
+        example += { +"the masses were too preoccupied by prosaic day-to-day concerns" }
+        example += { +"prosaic language can't convey the experience" }
     }
 
 
@@ -316,13 +328,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "perspicuous"
         input += "being perspicuous"
 
-        definition += { +"" }
+        definition += { +"Something perspicuous is transparently clear and easily understandable." }
 
-        argument_low += { +"" }
+        argument_low += { +"This isn’t a negative thing to say but it’s not the most positive you could come up with." }
+        argument_low += { +"This seems like a basic requirement of a piece of writing rather than a compliment." }
 
-        argument_high += { +"" }
+        argument_high += { +"Writing in a way that’s clear and easy to understand seems like something a writer would strive for." }
+        argument_high += { +"If no one can understand what you’ve written, it doesn’t have much value, does it?" }
 
-        example += { +"" }
+        example += { +"These essential points should be plainly expressed, in a style familiar and perspicuous to all." }
+        example += { +"it provides simpler and more perspicuous explanations than its rivals" }
     }
 
 
@@ -337,13 +352,16 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "adroit"
         input += "being adroit"
 
-        definition += { +"" }
+        definition += { +"Being adroit means being clever and showing skill." }
 
-        argument_low += { +"" }
+        argument_low += { +"Is this really the most flattering thing you could say about a person’s writing?" }
+        argument_low += { +"Being skillful is nice, but it might not be the most flattering compliment you could give." }
 
-        argument_high += { +"" }
+        argument_high += { +"Most authors would appreciate being told that their writing is clever and skillful." }
+        argument_high += { +"It seems like being clever and skillful is something most writers would strive for." }
 
-        example += { +"" }
+        example += { +"he was adroit at tax avoidance" }
+        example += { +"She became adroit at dealing with difficult questions." }
     }
 
 
@@ -358,13 +376,18 @@ val writingDeckEnglish = deck {  // todo: change the name pf the Deck to ***Deck
         input += "peerless"
         input += "being peerless"
 
-        definition += { +"" }
+        definition += { +"Peerless means better than all others of its kind." }
 
-        argument_low += { +"" }
+        argument_low += { +"It might seem like you’re being insincere if you say something excessively positive." }
+        argument_low += { +"This seems like a fairly generic complement." }
+        argument_low += { +"I think this would make the author think you’re sucking up to them." }
 
-        argument_high += { +"" }
+        argument_high += { +"“Peerless” means better than anything of its kind, so it’s basically the most positive thing you could say." }
+        argument_high += { +"Does it get any better than being best?" }
+        argument_high += { +"This is an absolutely glowing complement." }
 
-        example += { +"" }
+        example += { +"a peerless performance" }
+        example += { +"a peerless cartoonist" }
     }
 
 }

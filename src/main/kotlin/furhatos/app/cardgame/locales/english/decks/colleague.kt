@@ -196,140 +196,147 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
 
     // Start the deck here:
     card {
-        id = ""
+        id = "truculent"
         truth = 0
         image = "question-mark.png"
-        name = ""
-        def = "being hackneyed"
-        indef = "a hackneyed writing"
+        name = "Truculent"
+        def = "being truculent"
+        indef = "a truculent colleague"
 
         gramclass = "adjective"
 
-        input += "hackneyed"
-        input += "being hackneyed"
+        input += "truculent"
+        input += "being truculent"
 
-        definition += { +"" }
+        definition += { +"Being truculent means tending to argue or become angry; slightly aggressive" }
 
-        argument_low += { +"" }
+        argument_low += { +"It would be very hard to work on a task under pressure with someone who easily flies off the handle. " }
+        argument_low += { +"Having to work under pressure with someone who is angry and argumentative seems like a recipe for disaster." }
 
-        argument_high += { +"" }
+        argument_high += { +"Someone who gets angry easily might have the necessary passion to accomplish a difficult task under pressure." }
+        argument_high += { +"If someone is willing to argue with you, then they won’t keep quiet if they notice you making a dangerous mistake." }
 
-        example += { +"" }
+        example += { +"He was truculent and difficult to deal with." }
+        example += { +"Why are you in such a truculent mood that you want to argue with everyone today?" }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "callow"
+        truth = 1
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Callow"
+        def = "being callow"
+        indef = "a callow colleague"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "callow"
+        input += "being callow"
 
-        definition += { +"" }
+        definition += { +"Somebody who is callow is young and without experience." }
 
-        example += { +"" }
+        argument_low += { +"The last thing you want when doing a very complex task is someone who has no idea what they’re doing." }
+        argument_low += { +" Someone who is young and lacks experience is very likely to make dangerous mistakes. " }
 
-        argument_low += { +"" }
+        argument_high += { +"An inexperienced person might be open to ways of doing things that someone more set in their ways wouldn’t think of." }
+        argument_high += { +"If someone is very young and naïve, they may be flexible in their approach to problem solving. " }
 
-        argument_high += { +"" }
-
-        example += { +"" }
+        example += { +"Mark was just a callow youth of 16 when he arrived in Paris" }
+        example += { +"The callow basketball player missed an incredibly easy shot." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "indolent"
+        truth = 2
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Indolent"
+        def = "being indolent"
+        indef = "an indolent colleague"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "indolent"
+        input += "being indolent"
 
-        definition += { +"" }
+        definition += { +"Indolent means not wanting to work." }
 
-        example += { +"" }
+        argument_low += { +"If you need to do a difficult task under pressure you definitely don’t want to be stuck with someone who is unwilling to work. " }
+        argument_low += { +"The last thing you want to worry about in a high-pressure scenario is trying to get other people to pull their weight. " }
 
-        argument_low += { +"" }
+        argument_high += { +"A person who is lazy would probably be willing to stay out of your way and let you find the best solution to a problem. " }
 
-        argument_high += { +"" }
-
-        example += { +"" }
+        example += { +"they were indolent and addicted to a life of pleasure" }
+        example += { +"Because I enjoy being indolent, there is nothing I find more pleasant than relaxing in bed." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "utilitarian"
+        truth = 3
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Utilitarian"
+        def = "being utilitarian"
+        indef = "an utilitarian colleague"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "utilitarian"
+        input += "being utilitarian"
 
-        definition += { +"" }
+        definition += { +"Something that is utilitarian is useful and practical rather than attractive" }
 
-        example += { +"" }
+        argument_low += { +"Someone who is utilitarian might be convinced that the ends justify the means." }
+        argument_low += { +"A utilitarian person would probably approach problems in a way that isn’t particularly elegant." }
 
-        argument_low += { +"" }
+        argument_high += { +" A utilitarian person would be able to focus on coming up with a practical solution to a problem" }
+        argument_high += { +"It would be useful to have help from someone who focuses on practical details instead of worrying about appearances." }
 
-        argument_high += { +"" }
-
-        example += { +"" }
+        example += { +"The farm is a rather utilitarian building set just beyond another group of trees." }
+        example += { +"This site has shed some of its more fancy handles since we last reviewed it, becoming more utilitarian." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "shrewd"
+        truth = 4
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Shrewd"
+        def = "being shrewd"
+        indef = "a shrewd colleague"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "shrewd"
+        input += "being shrewd"
 
-        definition += { +"" }
+        definition += { +"Being shrewd means showing good judgement and likely to be right" }
 
-        example += { +"" }
+        argument_low += { +"Someone who is very shrewd might be convinced they’re right even if they aren’t" }
+        argument_low += { +"If you have to work on a difficult task with a shrewd person, they might rely on their good judgment rather than being careful and methodical. " }
 
-        argument_low += { +"" }
+        argument_high += { +"Having good judgment seems like a very important requirement for working under pressure." }
+        argument_high += { +"A shrewd person would be good at solving problems in a tense situation." }
 
-        argument_high += { +"" }
-
-        example += { +"" }
+        example += { +"He was shrewd enough not to take the job when there was the possibility of getting a better one a few months later." }
+        example += { +"It was a shrewd move to buy your house just before property prices started to rise." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "punctilious"
+        truth = 5
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Punctilious"
+        def = "being punctilious"
+        indef = "a punctilious colleague"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "punctilious"
+        input += "being punctilious"
 
-        definition += { +"" }
+        definition += { +"Someone punctilious is very careful to behave correctly or to perform your duties exactly as you should" }
 
-        example += { +"" }
+        argument_low += { +"If someone is too concerned with behaving correctly, maybe they would have trouble coming up with creative solutions." }
+        argument_low += { +"A person who is very careful and methodical might not be able to work quickly enough under pressure." }
 
-        argument_low += { +"" }
+        argument_high += { +"Excellent attention to detail is very important for completing a difficult task under a lot of stress. " }
+        argument_high += { +"If you need to work on a very challenging task with someone, you would want them to be very careful to do everything correctly. " }
 
-        argument_high += { +"" }
-
-        example += { +"" }
+        example += { +"he was punctilious in providing every amenity for his guests" }
+        example += { +"He was always punctilious in his manners." }
     }
 
 }

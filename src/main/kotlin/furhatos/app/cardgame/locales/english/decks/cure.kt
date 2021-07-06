@@ -196,84 +196,61 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
 
     // Start the deck here:
     card {
-        id = ""
+        id = "noxious"
         truth = 0
         image = "question-mark.png"
-        name = ""
-        def = "being hackneyed"
-        indef = "a hackneyed writing"
+        name = "Noxious"
+        def = "being noxious"
+        indef = "a noxious substance"
 
         gramclass = "adjective"
 
-        input += "hackneyed"
-        input += "being hackneyed"
+        input += "noxious"
+        input += "being noxious"
 
-        definition += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
-
-    card {
-        id = "lion"
-        truth = 0
-        image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
-
-        input += "lion"
-        input += "the lion"
-
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Noxious means poisonous or harmful." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"You can avoid getting sick so often by frequently washing your hands to eliminate noxious bacteria and viruses." }
+        example += { +"They died from inhaling noxious fumes." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "noisome"
+        truth = 1
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Noisome"
+        def = "being noisome"
+        indef = "a noisome substance"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "noisome"
+        input += "being noisome"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Something noisome is very disagreeable or unpleasant." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"As soon as I opened the refrigerator, the noisome scent of bad meat hit my nose. " }
+        example += { +"The air is infected with noisome gases." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "luscious"
+        truth = 2
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Luscious"
+        def = "being luscious"
+        indef = "a luscious substance"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "luscious"
+        input += "being luscious"
 
         definition += { +"" }
 
@@ -287,49 +264,69 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "inoculation"
+        truth = 3
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Inoculation"
+        def = "the inoculation"
+        indef = "an inoculation "
+        gramclass = "noun"
 
-        input += "lion"
-        input += "the lion"
+        input += "inoculation"
+        input += "the inoculation"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"inoculation protects a person or an animal from catching a particular disease by injecting them with a mild form of the disease" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"The disease can now be prevented by inoculation." }
+        example += { +"After inoculation with the 2nd vaccine the animals' temperature will go up." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "palliate"
+        truth = 4
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Palliate"
+        def = "to palliate"
+        indef = "palliate"
+        gramclass = "verb"
 
-        input += "lion"
-        input += "the lion"
+        input += "palliate"
+        input += "to palliate"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Palliating makes a disease or an illness less painful or unpleasant without curing it." }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"The drugs palliate pain but have no effect on inflammation." }
+        example += { +" They tried to palliate the hardship of their lives." }
+    }
+
+    card {
+        id = "panacea"
+        truth = 0
+        image = "question-mark.png"
+        name = "Panacea"
+        def = "the panacea"
+        indef = "a panacea"
+        gramclass = "noun"
+
+        input += "panacea"
+        input += "the panacea"
+
+        definition += { +"A panacea is something that will solve all the problems of a particular situation." }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"Many people believe chicken soup is a panacea for any respiratory illness. " }
+        example += { +"Unfortunately there is no panacea that will make cancer instantly vanish from your body." }
     }
 
 }

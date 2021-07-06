@@ -47,18 +47,7 @@ val writingDeckEnglish = deck {
 
     output {
         purpose = {
-            random {
-                +"Well. In this game we are going to sort these animals by"
-                +"So. For this game we will sort these animals by"
-                +"Okey, In this game we shall arrange these animals by"
-            }
-            random {
-                +"the temperature of their habitat"
-                +"their favorite habitat temperature"
-                +"their temperature tolerance"
-                +"which temperature they live in"
-                +"which climate they live in"
-            }
+            +"You have just read a piece of writing that you find interesting. "
         }
         singular = {
             +"writing"
@@ -170,22 +159,22 @@ val writingDeckEnglish = deck {
         image = "writing.jpg"
         name = "Hackneyed"
         def = "being hackneyed"
-        indef = "a hackneyed writing"  // this is an example, I am not sure how it will turn out. When we finish the first deck we will decide how to tread adjectives and adverbs and verbs
+        indef = "a hackneyed substance"  // this is an example, I am not sure how it will turn out. When we finish the first deck we will decide how to tread adjectives and adverbs and verbs
 
         gramclass = "adjective"
 
         input += "hackneyed"
         input += "being hackneyed"
 
-        definition += { +"Hackneyed means something being used too often and therefore it is boring." }
+        definition += { +"Hackneyed means something being used too often and therefore boring." }
 
         argument_low += { +"This is a very negative thing to say about someone’s writing, since it implies that it’s boring. " }
-        argument_low += { +"I think it would be very rude to say that someone’s writing overuses repetitive tropes. " }
+        argument_low += { +"I think it would be very rude to say that someone’s writing overuses repetitive tropes " }
 
         argument_high += { +"Lots of authors try to write things similar to what others have written, so this seems like a good compliment. " }
         argument_high += { +" I think it’s a positive quality for writing to reuse ideas that have been used many times before. " }
 
-        example += { +"The artist should be careful to avoid hackneyed subjects." }
+        example += { +"The artist should be careful to avoid hackneyed subjects" }
         example += { +"The plot of the film is just a hackneyed boy-meets-girl scenario." }
     }
 
@@ -201,7 +190,7 @@ val writingDeckEnglish = deck {
         input += "trite"
         input += "being trite"
 
-        definition += { +"Being trite means being boring because it has been expressed so many times before, it is unoriginal" }
+        definition += { +"Being trite means being boring because it has been expressed so many times before; not original." }
 
         argument_low += { +"Calling someone’s writing unoriginal seems pretty insulting." }
         argument_low += { +"A word that means boring and not original does not seem like much of a compliment." }

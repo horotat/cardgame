@@ -53,16 +53,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     output {
         purpose = {
             random {
-                +"Well. In this game we are going to sort these animals by"
-                +"So. For this game we will sort these animals by"
-                +"Okey, In this game we shall arrange these animals by"
-            }
-            random {
-                +"the temperature of their habitat"
-                +"their favorite habitat temperature"
-                +"their temperature tolerance"
-                +"which temperature they live in"
-                +"which climate they live in"
+                +"Oh no... Your friend just got sick and you do not recognize any of the bottles in their medicin cabinet. Rank them from most to least useful based on the words on their etiquette."
             }
         }
         singular = {

@@ -53,16 +53,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     output {
         purpose = {
             random {
-                +"Well. In this game we are going to sort these animals by"
-                +"So. For this game we will sort these animals by"
-                +"Okey, In this game we shall arrange these animals by"
-            }
-            random {
-                +"the temperature of their habitat"
-                +"their favorite habitat temperature"
-                +"their temperature tolerance"
-                +"which temperature they live in"
-                +"which climate they live in"
+                +"You are starting a new project with new collegues tomorrow. Rank from most to least the qualities you hope that your collegues have."
             }
         }
         singular = {

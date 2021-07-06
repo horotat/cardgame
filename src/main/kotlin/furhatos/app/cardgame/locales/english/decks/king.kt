@@ -53,16 +53,7 @@ val jobsDeckEnglish = deck {
     output {
         purpose = {
             random {
-                +"Well. In this game we are going to sort these animals by"
-                +"So. For this game we will sort these animals by"
-                +"Okey, In this game we shall arrange these animals by"
-            }
-            random {
-                +"the temperature of their habitat"
-                +"their favorite habitat temperature"
-                +"their temperature tolerance"
-                +"which temperature they live in"
-                +"which climate they live in"
+                +"Suddenly you find yourself in a kingdom you do not recognize. The leader of the country is deciding whether they like you or not. Rank how you should act based on how appropriate it would be."
             }
         }
         singular = {
@@ -70,26 +61,26 @@ val jobsDeckEnglish = deck {
         }
         min_def = {
             random {
-                +"the animal living in the coldest climate"
-                +"the most low temperature tolerant one"
+                +"the least appropriate"
+                +"the most inappropriate"
             }
         }
         max_def = {
             random {
-                +"the least cold tolerant one"
-                +"the animal living in the warmest climate"
+                +"the most appropriate"
+                +"the least inappropriate"
             }
         }
         is_min = {
             random {
-                +"is the animal living in the coldest environment compared to others"
-                +"is the coldest living one"
+                +"is the least appropriate"
+                +"is the most inappropriate"
             }
         }
         is_max = {
             random {
-                +"is the animal living in the warmest climate compared to the others"
-                +"is warmest living climate one"
+                +"is the most appropriate"
+                +"is the least inappropriate"
             }
         }
         is_less_than = {
@@ -196,140 +187,160 @@ val jobsDeckEnglish = deck {
 
     // Start the deck here:
     card {
-        id = ""
+        id = "vituperate"
         truth = 0
         image = "question-mark.png"
-        name = ""
-        def = "being hackneyed"
-        indef = "a hackneyed writing"
+        name = "Vituperate"
+        def = "to vituperate"
+        indef = "vituperate"
 
+        gramclass = "verb"
+
+        input += "vituperate"
+        input += "to vituperate"
+
+        definition += { +"To vituperate is to blame or insult (someone) in strong or violent language." }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"let us not revile and vituperate those who are our brethren" }
+        example += { +"It is considered almost universally acceptable to abuse and vituperate the agency." }
+    }
+
+    card {
+        id = "disparage"
+        truth = 1
+        image = "question-mark.png"
+        name = "Disparage"
+        def = "to disparage"
+        indef = "disparage"
+        gramclass = "verb"
+
+        input += "to disparage"
+        input += "disparage"
+
+        definition += { +"Disparage means to suggest that somebody/something is not important or valuable" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"I don't mean to disparage your achievements" }
+        example += { +" he never missed an opportunity to disparage his competitors" }
+    }
+
+    card {
+        id = "eclectic"
+        truth = 2
+        image = "question-mark.png"
+        name = "Eclectic"
+        def = "being eclectic"
+        indef = "an eclectic person"
         gramclass = "adjective"
 
-        input += "hackneyed"
-        input += "being hackneyed"
+        input += "eclectic"
+        input += "being eclectic"
 
-        definition += { +"" }
+        definition += { +"Something eclectic consists of different types, methods and styles" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"My friends are an eclectic group of individuals who can rarely agree on a single topic." }
+        example += { +"In Gerald’s library, you will find an eclectic mix of books" }
+
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "contrite"
+        truth = 3
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Contrite"
+        def = "being contrite"
+        indef = "a contrite person"
+        gramclass = "adjective"
 
-        input += "lion"
-        input += "the lion"
+        input += "contrite"
+        input += "being contrite"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Being contrite means being very sorry for something bad that you have done" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"He looked so contrite that she believed he was sorry." }
+        example += { +"Though she claimed to be contrite, the woman was truly shameless." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "tout"
+        truth = 4
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Tout"
+        def = "to tout"
+        indef = "tout"
+        gramclass = "verb"
 
-        input += "lion"
-        input += "the lion"
+        input += "tout"
+        input += "to tout"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Tout means to try to persuade people that somebody/something is important or valuable by praising them/it" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"All doctors tout the benefits of eating nutritiously and exercising regularly." }
+        example += { +"The company is running advertisements touting the drug's effectiveness." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "extol"
+        truth = 5
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Extol"
+        def = "to extol"
+        indef = "extol"
+        gramclass = "verb"
 
-        input += "lion"
-        input += "the lion"
+        input += "extol"
+        input += "to extol"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"To extol is to praise somebody or something very much" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"She is forever extolling the virtues of her children." }
+        example += { +"She was extolled as a genius." }
     }
 
     card {
-        id = "lion"
-        truth = 0
+        id = "adulate"
+        truth = 6
         image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
+        name = "Adulate"
+        def = "to adulate"
+        indef = "adulate"
+        gramclass = "verb"
 
-        input += "lion"
-        input += "the lion"
+        input += "adulate"
+        input += "to adulate"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"To adulate is to admire or praise someone very much, especially when this is more than" }
 
         argument_low += { +"" }
 
         argument_high += { +"" }
 
-        example += { +"" }
+        example += { +"he was adulated in the press" }
+        example += { +"This country's glorious and wonderful system has been copied and adulated throughout the world." }
     }
 
-    card {
-        id = "lion"
-        truth = 0
-        image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
-
-        input += "lion"
-        input += "the lion"
-
-        definition += { +"" }
-
-        example += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
 
 }

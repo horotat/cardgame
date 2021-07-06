@@ -53,16 +53,7 @@ val funeralDeckEnglish = deck {
     output {
         purpose = {
             random {
-                +"Well. In this game we are going to sort these animals by"
-                +"So. For this game we will sort these animals by"
-                +"Okey, In this game we shall arrange these animals by"
-            }
-            random {
-                +"the temperature of their habitat"
-                +"their favorite habitat temperature"
-                +"their temperature tolerance"
-                +"which temperature they live in"
-                +"which climate they live in"
+                +"You are going to a funeral. How should you act? Rank from most appropriate to most inappropriate."
             }
         }
         singular = {

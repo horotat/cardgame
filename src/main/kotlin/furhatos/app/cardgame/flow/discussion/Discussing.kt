@@ -24,7 +24,7 @@ val Discussing = state(Playing) {
         }
     }
 
-    onEvent<SenseSpeechDirection>(instant=true) {
+    onEvent<SenseSpeechDirection>(instant = true) {
         gazeShiftLimiter.limitRepeat(1000) {
             furhat.attend(users.getUser(it.userId))
         }
@@ -33,6 +33,24 @@ val Discussing = state(Playing) {
     onResponse<RequestRepeat> {
         furhat.say("Sure!")
         furhat.ask(furhat.dialogHistory.utterances.last().toUtterance())
+    }
+
+    onResponse<pronounceCards> {
+        furhat.ask {
+            random {
+                +"sure!"
+                +"You got it!"
+            }
+            random {
+                +"They are: "
+                +"From left to right: "
+            }
+            +delay(1000)
+            for (card in Game.cardSet.currentOrder) {
+                +card.name
+                +delay(1000)
+            }
+        }
     }
 
     onResponse(priority = true) {

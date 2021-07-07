@@ -205,9 +205,7 @@ val cureDeckEnglish = deck {
         input += "luscious"
         input += "being luscious"
 
-        definition += { +"" }
-
-        example += { +"" }
+        definition += { +"Luscious means having a strong, pleasant taste." }
 
         argument_low += { +"A medication being “luscious” just tells you it tastes good, but for all we know it could be completely useless." }
         argument_low += { +" I’m not sure a word like “luscious”, which is usually used to describe something delicious or pleasing to the senses, is something you’d find on a bottle of medication." }
@@ -215,7 +213,8 @@ val cureDeckEnglish = deck {
         argument_high += { +"A medicine that is luscious would be very pleasant to consume, so it would be easy to get your sick friend to take it." }
         argument_high += { +"Taking a luscious medicine that tastes delicious would probably make your sick friend feel much better." }
 
-        example += { +"" }
+        example += { +"I wanted to take a bite of the luscious apple." }
+        example += { +"Because the bread smelled luscious, Tom decided to go into the bakery." }
     }
 
     card {

@@ -93,69 +93,56 @@ val jobsDeckEnglish = deck {
 
     questions {
 
-        class AskHaveSeenAnimal() : Intent() {
-            var card: CardEntity? = null
-            override fun getExamples(lang: Language): List<String> {
-                return listOf("have you ever seen a @card")
-            }
-        }
-
-        // User asking information about what a particular card is?
         class AskWhatIs() : Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("what is @card")  // ask: does it matter to put the question mark or not?
+                return listOf("what is @card?", "define @card", "what does @card mean?", "what is the definition of @card")
             }
         }
 
-        user<AskHaveSeenAnimal> {
-            val seenAnimal = it.card!!.card!!
-            robot {
-                +attend(seenAnimal.location)
-                +{ focusStack.prime(seenAnimal) }
-                +"No, I don't think I have ever seen ${seenAnimal.indef}."
-                +attend(users.current)
-                +"Have you?"
-            }
-            user(Yes()) {
-                robot { +"Wow, sounds interesting. Was ${seenAnimal.def} chilling on the ice?" }
-                user(Yes(), No(), DontKnow(), Nomatch, proceed = TakeInitiative()) {
-                    robot { +"Okay, I see" }
-                }
-            }
-            user(No(), DontKnow()) {
-                robot { +"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef} live in." }
-            }
-            user(
-                intent(
-                    "I have seen them on TV",
-                    "I think I have seen them on TV",
-                    "I have only seen them on film",
-                    "I have seen pictures of them"
-                )
-            ) {
-                robot { +"Me too. But that's not the same thing as seeing them in real life, I guess." }
+        class AskExample(): Intent() {
+            var card: CardEntity? = null
+            override fun getExamples(lang: Language): List<String> {
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card" )
             }
         }
 
-
-        fun RobotTurn.userFollowUp() {  // ask: what is RobotTurn?
-            user(intent("can you elaborate", "I need more details", "give me more information")) {
-                val animal = focusStack[0]
+        fun RobotTurn.userFollowUpDefinition() {
+            user(intent("tell me another definition", "define more", "give me another definition")) {
+                val king = focusStack[0]
                 robot {
-                    include(animal.explanation.randomAvoidRepeat()!!)
+                    include(king.definition.randomAvoidRepeat()!!)
                 }
-                userFollowUp()
+                userFollowUpDefinition()
             }
         }
 
         user<AskWhatIs> {
-            val animal = it.card!!.card!!
+            val king = it.card!!.card!!
             robot {
-                +{ focusStack.prime(animal) }  // ask: what does focus stack do?
-                include(animal.explanation.randomAvoidRepeat()!!)
+                +{ focusStack.prime(king) }
+                include(king.definition.randomAvoidRepeat()!!)
             }
-            userFollowUp()
+            userFollowUpDefinition()
+        }
+
+        fun RobotTurn.userFollowUpExample() {
+            user(intent("another example", "can you tell me another sentence?", "give me another instance", "tell me another example", "I want more examples", "try another example", "could you tell me another one?")) {
+                val king = focusStack[0]
+                robot {
+                    include(king.example.randomAvoidRepeat()!!)
+                }
+                userFollowUpExample()
+            }
+        }
+
+        user<AskExample> {
+            val king = it.card!!.card!!
+            robot {
+                +{ focusStack.prime(king) }
+                include(king.example.randomAvoidRepeat()!!)
+            }
+            userFollowUpExample()
         }
 
     }

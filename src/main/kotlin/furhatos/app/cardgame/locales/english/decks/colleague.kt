@@ -19,35 +19,28 @@ import furhatos.util.Language
 
 val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
 
-    imgFolder = "writing"
-    name = "Writing Review"
+    imgFolder = "colleague"
+    name = "Best Colleague"
     unitLabel = " °importance"
 
     input {
-        singular += "writing"
+        singular += "colleagues"
 
-        min_def += options("the coldest climate living") / options("animal", "one", "")
-        max_def += options("the") / options("warmest climate living", "hottest climate living") / options(
-            "animal",
-            "one",
-            ""
-        )
+        min_def += options("the best quality a colleague can have") / options("animal", "one", "")
+        max_def += options("the") / options("worst behaviour", "most undesired quality") / options("in a colleague")
 
-        is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
+        is_min_def += options("may be", "might be", "could be", "is") / min_def
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
-        is_less_than += "lives in colder weather than"
-        is_less_than += "is not as warm tolerant as"
-        is_less_than += "is not as hot living as"
-        is_less_than += "likes less temperature more than"
-        is_less_than += "wants a chillier temperature compared to"
-        is_less_than += "lives in sauna in the eyes of the"
+        is_less_than += "is a worse quality than"
+        is_less_than += "is not as good as"
+        is_less_than += "is a lower personality trait"
+        is_less_than += "is a worse than"
+        is_less_than += "is less likable in a person than"
 
-        is_more_than += "lives in warmer weather than"
-        is_more_than += "is not as cold tolerant as"
-        is_more_than += "likes warmth more than"
-        is_more_than += "doesn't like cold as much as"
-        is_more_than += "would freeze where lives the"
+        is_more_than += "is a better quality in a person than"
+        is_more_than += "is better than"
+        is_more_than += "is a more likable personality than"
     }
 
     output {
@@ -57,139 +50,104 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
             }
         }
         singular = {
-            +"animal"
+            +"personality trait"
         }
         min_def = {
             random {
-                +"the animal living in the coldest climate"
-                +"the most low temperature tolerant one"
+                +"the worst personality trait"
+                +"the loswest charachter quality in a colleague"
             }
         }
         max_def = {
             random {
-                +"the least cold tolerant one"
-                +"the animal living in the warmest climate"
+                +"the most likable charachter quality of a colleague"
+                +"the best personality trait of a colleague"
             }
         }
         is_min = {
             random {
-                +"is the animal living in the coldest environment compared to others"
-                +"is the coldest living one"
+                +"is the worst personality trait a colleague can have among the others"
+                +"is the least likable character trait of a colleague"
             }
         }
         is_max = {
             random {
-                +"is the animal living in the warmest climate compared to the others"
-                +"is warmest living climate one"
+                +"is the best value in a colleague"
+                +"is the best way a colleague can be among all others"
             }
         }
         is_less_than = {
-            +"tolerates colder weather compared to"
+            +"is not as important as"
+            +"is less determining than"
         }
         is_more_than = {
-            +"lives in warmer place than"
+            +"makes a better person than"
+            +"is a more more important personality trait"
+            +"makes a person be a better colleague compared to"
         }
     }
 
     questions {
 
-        class AskHaveSeenAnimal() : Intent() {
-            var card: CardEntity? = null
-            override fun getExamples(lang: Language): List<String> {
-                return listOf("have you ever seen a @card")
-            }
-        }
-
-        // User asking information about what a particular card is?
         class AskWhatIs() : Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("what is @card")  // ask: does it matter to put the question mark or not?
+                return listOf("what is @card?", "define @card", "what does @card mean?", "what is the definition of @card")
             }
         }
 
-        user<AskHaveSeenAnimal> {
-            val seenAnimal = it.card!!.card!!
-            robot {
-                +attend(seenAnimal.location)
-                +{ focusStack.prime(seenAnimal) }
-                +"No, I don't think I have ever seen ${seenAnimal.indef}."
-                +attend(users.current)
-                +"Have you?"
-            }
-            user(Yes()) {
-                robot { +"Wow, sounds interesting. Was ${seenAnimal.def} chilling on the ice?" }
-                user(Yes(), No(), DontKnow(), Nomatch, proceed = TakeInitiative()) {
-                    robot { +"Okay, I see" }
-                }
-            }
-            user(No(), DontKnow()) {
-                robot { +"Well, then it might be hard for us to know which temperature does the ${seenAnimal.indef} live in." }
-            }
-            user(
-                intent(
-                    "I have seen them on TV",
-                    "I think I have seen them on TV",
-                    "I have only seen them on film",
-                    "I have seen pictures of them"
-                )
-            ) {
-                robot { +"Me too. But that's not the same thing as seeing them in real life, I guess." }
+        class AskExample(): Intent() {
+            var card: CardEntity? = null
+            override fun getExamples(lang: Language): List<String> {
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card" )
             }
         }
 
-
-        fun RobotTurn.userFollowUp() {  // ask: what is RobotTurn?
-            user(intent("can you elaborate", "I need more details", "give me more information")) {
-                val animal = focusStack[0]
+        fun RobotTurn.userFollowUpDefinition() {
+            user(intent("tell me another definition", "define more", "give me another definition")) {
+                val trait = focusStack[0]
                 robot {
-                    include(animal.explanation.randomAvoidRepeat()!!)
+                    include(trait.definition.randomAvoidRepeat()!!)
                 }
-                userFollowUp()
+                userFollowUpDefinition()
             }
         }
 
         user<AskWhatIs> {
-            val animal = it.card!!.card!!
+            val trait = it.card!!.card!!
             robot {
-                +{ focusStack.prime(animal) }  // ask: what does focus stack do?
-                include(animal.explanation.randomAvoidRepeat()!!)
+                +{ focusStack.prime(trait) }
+                include(trait.definition.randomAvoidRepeat()!!)
             }
-            userFollowUp()
+            userFollowUpDefinition()
         }
 
-    }
+        fun RobotTurn.userFollowUpExample() {
+            user(intent("another example", "can you tell me another sentence?", "give me another instance", "tell me another example", "I want more examples", "try another example", "could you tell me another one?")) {
+                val trait = focusStack[0]
+                robot {
+                    include(trait.example.randomAvoidRepeat()!!)
+                }
+                userFollowUpExample()
+            }
+        }
 
-    // template: you can copy and paste the one below for all of them. It's a clean version without the comments.
+        user<AskExample> {
+            val trait = it.card!!.card!!
+            robot {
+                +{ focusStack.prime(trait) }
+                include(trait.example.randomAvoidRepeat()!!)
+            }
+            userFollowUpExample()
+        }
 
-    card {
-        id = "lion"
-        truth = 0
-        image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
-
-        input += "lion"
-        input += "the lion"
-
-        definition += { +"" }
-
-        example += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
     }
 
     // Start the deck here:
     card {
         id = "truculent"
         truth = 0
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Truculent"
         def = "being truculent"
         indef = "a truculent colleague"
@@ -214,7 +172,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "callow"
         truth = 1
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Callow"
         def = "being callow"
         indef = "a callow colleague"
@@ -238,7 +196,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "indolent"
         truth = 2
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Indolent"
         def = "being indolent"
         indef = "an indolent colleague"
@@ -261,7 +219,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "utilitarian"
         truth = 3
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Utilitarian"
         def = "being utilitarian"
         indef = "an utilitarian colleague"
@@ -285,7 +243,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "shrewd"
         truth = 4
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Shrewd"
         def = "being shrewd"
         indef = "a shrewd colleague"
@@ -309,7 +267,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "punctilious"
         truth = 5
-        image = "question-mark.png"
+        image = "colleague.jpg"
         name = "Punctilious"
         def = "being punctilious"
         indef = "a punctilious colleague"

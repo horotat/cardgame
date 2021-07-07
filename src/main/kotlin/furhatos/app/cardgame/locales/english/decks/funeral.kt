@@ -36,53 +36,55 @@ val funeralDeckEnglish = deck {
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
         is_less_than += "is less appropriate than"
-        is_less_than += "is not as warm tolerant as"
-        is_less_than += "is not as hot living as"
-        is_less_than += "likes less temperature more than"
+        is_less_than += "is not as sympathetic as"
+        is_less_than += "is not as warm as"
+        is_less_than += "is not so appropriate compared to"
 
-        is_more_than += "lives in warmer weather than"
-        is_more_than += "is not as cold tolerant as"
-        is_more_than += "likes warmth more than"
+        is_more_than += "sounds more appropriate than"
+        is_more_than += "fits better to the situation compared to"
+        is_more_than += "is a better behaviour than"
     }
 
     output {
         purpose = {
             random {
-                +"You are going to a funeral. How should you act? Rank from most appropriate to most inappropriate."
+                +"You are going to a funeral. How should you act? Rank from the most inappropriate to the most appropriate."
             }
         }
         singular = {
-            +"animal"
+            +"manner"
         }
         min_def = {
             random {
-                +"the animal living in the coldest climate"
-                +"the most low temperature tolerant one"
+                +"the most unsympathetic one"
+                +"the least appropriate attitude for a funeral"
             }
         }
         max_def = {
             random {
-                +"the least cold tolerant one"
-                +"the animal living in the warmest climate"
+                +"the most appropriate one"
+                +"the best way to show your respect"
+                +"the most empathetic"
             }
         }
         is_min = {
             random {
-                +"is the animal living in the coldest environment compared to others"
-                +"is the coldest living one"
+                +"is the least appropriate way of behaving in a funeral"
+                +"is the least respectful among all."
             }
         }
         is_max = {
             random {
-                +"is the animal living in the warmest climate compared to the others"
-                +"is warmest living climate one"
+                +"is the best way to show respect in a funeral"
+                +"is the most sympathetic"
+                +"is the most empathetic"
             }
         }
         is_less_than = {
-            +"tolerates colder weather compared to"
+            +"is less appropriate than"
         }
         is_more_than = {
-            +"lives in warmer place than"
+            +"is more appropriate than"
         }
     }
 

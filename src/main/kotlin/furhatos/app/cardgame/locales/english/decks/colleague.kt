@@ -167,25 +167,24 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
-        id = ""
+        id = "clumsy"
         truth = 1
         image = "work.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Clumsy"
+        def = "being clumsy"
+        indef = "a clumsy colleague"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "clumsy"
+        input += "being clumsy"
 
-        definition += { +"" }
+        definition += { +"Being clumsy means moving or doing things in a way that is not smooth or steady or careful" }
 
-        argument_low += { +"" }
+        argument_low += { +" A clumsy person might make an involuntary mistake. " }
 
-        argument_high += { +"" }
+        argument_high += { +"Someone who is clumsy might be good at other things. " }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"His clumsy fingers couldn't untie the knot." }
     }
 
     card {
@@ -260,25 +259,25 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
-        id = ""
+        id = "competent"
         truth = 5
         image = "work.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Competent"
+        def = "being competent"
+        indef = "a competent colleague"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "competent"
+        input += "being competent"
 
-        definition += { +"" }
+        definition += { +"Someone competent have enough skill or knowledge to do something well or to the necessary standard" }
 
-        argument_low += { +"" }
+        argument_low += { +"Someone who knows that they are competent might not listen to the ideas of others." }
 
-        argument_high += { +"" }
+        argument_high += { +"A competent person knows what they are doing and is unlikely to do something wrong. " }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"He's very competent in his work." }
+        example += { +"She is highly competent at her job." }
     }
 
     card {
@@ -306,25 +305,25 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
-        id = ""
+        id = "thorough"
         truth = 7
         image = "work.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Thorough"
+        def = "being thorough"
+        indef = "a thorough colleague"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "thorough"
+        input += "being thorough"
 
-        definition += { +"" }
+        definition += { +"Being thorough means doing things very carefully and with great attention to detail." }
 
-        argument_low += { +"" }
+        argument_low += { +"Someone who is thorough might not do things fast. " }
 
-        argument_high += { +"" }
+        argument_high += { +"A thorough person will make sure that everything is done properly. " }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"He was determined to be thorough in his research." }
+        example += { +"She's very thorough and conscientious." }
     }
 
 

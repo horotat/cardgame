@@ -172,8 +172,30 @@ val funeralDeckEnglish = deck {
     }
 
     card {
-        id = "ebullient"
+        id = ""
         truth = 1
+        image = "funeral.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
+        id = "ebullient"
+        truth = 2
         image = "funeral.jpg"
         name = "Ebullient"
         def = "being ebullient"
@@ -196,8 +218,30 @@ val funeralDeckEnglish = deck {
     }
 
     card {
+        id = ""
+        truth = 3
+        image = "funeral.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
         id = "cogent"
-        truth = 2
+        truth = 4
         image = "funeral.jpg"
         name = "Cogent"
         def = "being cogent"
@@ -221,7 +265,7 @@ val funeralDeckEnglish = deck {
 
     card {
         id = "amicable"
-        truth = 3
+        truth = 5
         image = "funeral.jpg"
         name = "Amicable"
         def = "being amicable"
@@ -244,8 +288,30 @@ val funeralDeckEnglish = deck {
     }
 
     card {
+        id = ""
+        truth = 6
+        image = "funeral.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
         id = "lugubrious"
-        truth = 4
+        truth = 7
         image = "funeral.jpg"
         name = "Lugubrious"
         def = "being lugubrious"
@@ -269,7 +335,7 @@ val funeralDeckEnglish = deck {
 
     card {
         id = "disconsolate"
-        truth = 5
+        truth = 8
         image = "funeral.jpg"
         name = "Disconsolate"
         def = "being disconsolate"

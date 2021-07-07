@@ -227,10 +227,32 @@ val writingDeckEnglish = deck {
         example += { +"She seemed bored and asked trite questions" }
     }
 
+    card {
+        id = "unexciting"
+        truth = 2
+        image = "writing.jpg"
+        name = "Unexciting"
+        def = "being unexciting"
+        indef = "an unexciting writing"
+        gramclass = "adjective"
+
+        input += "unexciting"
+        input += "being unexciting"
+
+        definition += { +"Something unexciting is not interesting, it is boring" }
+
+        argument_low += { +"Saying that a text is unexciting implies that it is not so funny to read. " }
+
+        argument_high += { +"If a text is unexiting nothing unexpected happens in it, which would appear to be good. " }
+
+        example += { +"He is an earnest, unexciting politician." }
+        example += { +"Some people might find the life we live here unexciting" }
+    }
+
 
     card {
         id = "derivative"
-        truth = 2
+        truth = 3
         image = "writing.jpg"
         name = "Derivative"
         def = "being derivative"
@@ -254,7 +276,7 @@ val writingDeckEnglish = deck {
 
     card {
         id = "prosaic"
-        truth = 3
+        truth = 4
         image = "writing.jpg"
         name = "Prosaic"
         def = "being prosaic"
@@ -275,10 +297,32 @@ val writingDeckEnglish = deck {
         example += { +"prosaic language can't convey the experience" }
     }
 
+    card {
+        id = "acceptable"
+        truth = 5
+        image = "writing.jpg"
+        name = "Acceptable"
+        def = "being acceptable"
+        indef = "an acceptable piece of writing"
+        gramclass = "adjective"
+
+        input += "acceptable"
+        input += "being acceptable"
+
+        definition += { +"Acceptable means agreed or approved of by most people in a society" }
+
+        argument_low += { +"Saying that the text is acceptable does not sound like praise. " }
+
+        argument_high += { +"Something acceptable is not bad. " }
+
+        example += { +"Children must learn socially acceptable behaviour." }
+        example += { +"It is perfectly acceptable for you as an employee to say no." }
+    }
+
 
     card {
         id = "perspicuous"
-        truth = 4
+        truth = 6
         image = "writing.jpg"
         name = "Perspicuous"
         def = "being perspicuous"
@@ -299,10 +343,31 @@ val writingDeckEnglish = deck {
         example += { +"it provides simpler and more perspicuous explanations than its rivals" }
     }
 
+    card {
+        id = "interesting"
+        truth = 7
+        image = "writing.jpg"
+        name = "Interesting"
+        def = "being interesting"
+        indef = "an interesting writing"
+        gramclass = "adjective"
+
+        input += "interesting"
+        input += "being interesting"
+
+        definition += { +"Something interesting attracts your attention because it is special, exciting or unusual" }
+
+        argument_low += { +"Many texts are interesting, it does not make the text stand out." }
+
+        argument_high += { +"If  a text is interesting, it is fun to read and people want to read it." }
+
+        example += { +"She sounds like a really interesting person." }
+        example += { +"The article raises several interesting questions." }
+    }
 
     card {
         id = "adroit"
-        truth = 5
+        truth = 8
         image = "writing.jpg"
         name = "Adroit"
         def = "being adroit"
@@ -326,7 +391,7 @@ val writingDeckEnglish = deck {
 
     card {
         id = "peerless"
-        truth = 6
+        truth = 9
         image = "writing.jpg"
         name = "Peerless"
         def = "being peerless"

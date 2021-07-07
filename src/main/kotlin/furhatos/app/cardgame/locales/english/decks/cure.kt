@@ -194,8 +194,30 @@ val cureDeckEnglish = deck {
     }
 
     card {
-        id = "luscious"
+        id = ""
         truth = 2
+        image = "elixir.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
+        id = "luscious"
+        truth = 3
         image = "elixir.jpg"
         name = "Luscious"
         def = "being luscious"
@@ -219,7 +241,7 @@ val cureDeckEnglish = deck {
 
     card {
         id = "inoculation"
-        truth = 3
+        truth = 4
         image = "elixir.jpg"
         name = "Inoculation"
         def = "the inoculation"
@@ -243,7 +265,7 @@ val cureDeckEnglish = deck {
 
     card {
         id = "palliate"
-        truth = 4
+        truth = 5
         image = "elixir.jpg"
         name = "Palliate"
         def = "to palliate"
@@ -266,8 +288,30 @@ val cureDeckEnglish = deck {
     }
 
     card {
+        id = ""
+        truth = 6
+        image = "elixir.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
         id = "panacea"
-        truth = 5
+        truth = 7
         image = "elixir.jpg"
         name = "Panacea"
         def = "the panacea"

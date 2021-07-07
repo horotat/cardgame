@@ -144,7 +144,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     card {
         id = "truculent"
         truth = 0
-        image = "colleague.jpg"
+        image = "work.jpg"
         name = "Truculent"
         def = "being truculent"
         indef = "a truculent colleague"
@@ -167,9 +167,31 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
-        id = "callow"
+        id = ""
         truth = 1
-        image = "colleague.jpg"
+        image = "work.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
+        id = "callow"
+        truth = 2
+        image = "work.jpg"
         name = "Callow"
         def = "being callow"
         indef = "a callow colleague"
@@ -192,8 +214,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
 
     card {
         id = "indolent"
-        truth = 2
-        image = "colleague.jpg"
+        truth = 3
+        image = "work.jpg"
         name = "Indolent"
         def = "being indolent"
         indef = "an indolent colleague"
@@ -215,8 +237,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
 
     card {
         id = "utilitarian"
-        truth = 3
-        image = "colleague.jpg"
+        truth = 4
+        image = "work.jpg"
         name = "Utilitarian"
         def = "being utilitarian"
         indef = "an utilitarian colleague"
@@ -238,9 +260,31 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
+        id = ""
+        truth = 5
+        image = "work.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+    card {
         id = "shrewd"
-        truth = 4
-        image = "colleague.jpg"
+        truth = 6
+        image = "work.jpg"
         name = "Shrewd"
         def = "being shrewd"
         indef = "a shrewd colleague"
@@ -262,9 +306,32 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     }
 
     card {
+        id = ""
+        truth = 7
+        image = "work.jpg"
+        name = ""
+        def = ""
+        indef = ""
+        gramclass = ""
+
+        input += ""
+        input += ""
+
+        definition += { +"" }
+
+        argument_low += { +"" }
+
+        argument_high += { +"" }
+
+        example += { +"" }
+        example += { +"" }
+    }
+
+
+    card {
         id = "punctilious"
-        truth = 5
-        image = "colleague.jpg"
+        truth = 8
+        image = "work.jpg"
         name = "Punctilious"
         def = "being punctilious"
         indef = "a punctilious colleague"

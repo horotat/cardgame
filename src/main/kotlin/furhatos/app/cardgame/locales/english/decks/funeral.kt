@@ -188,9 +188,12 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Being exultant means feeling or showing that you are very proud or happy, especially because of something exciting that has happened" }
 
-        argument_low += { +"" }
 
-        argument_high += { +"" }
+        argument_low += { +"The last thing you should do at a funeral is to act exultant: seeming proud and happy will make it look like you’re glad your friend is dead." }
+        argument_low += { +"Appearing to be happy about your friend’s death by acting exultant at the funeral is inappropriate and will probably make you seem like the prime suspect." }
+
+        argument_high += { +"Only a fool would murder someone and then act exultent at their funeral, so seeming proud and happy would be appropriate." }
+        argument_high += { +"The detective is probably expecting the murderer to pretend to be sad, so acting exultent and seeming as if something exciting just happened will throw them off." }
 
         example += { +"he waved to the exultant crowds" }
         example += { +"They were exultant over their victory." }
@@ -210,9 +213,11 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Someone ebullient is full of confidence, energy and good humour" }
 
-        argument_low += { +"" }
+        argument_low += { +"Seeming ebullient and cheerful when your friend has just died may seem insensitive and might make the detective suspicious of you." }
+        argument_low += { +"Someone who has just lost their friend would seem like a psychopath if they acted happy and ebullient." }
 
-        argument_high += { +"" }
+        argument_high += { +"Many people would prefer that their friends and loved ones are ebullient and in good spirits, even if they’ve just passed away" }
+        argument_high += { +" If you project confidence and good spirits and come across as ebullient, it will seem unlikely that you could have done something terrible like murder a friend." }
 
         example += { +"She sounded as ebullient and happy as ever." }
         example += { +"Charlie’s ebullient attitude made him a favorite in the office." }
@@ -232,9 +237,11 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Cogent means persuasive and well expressed." }
 
-        argument_low += { +"" }
+        argument_low += { +"If the biggest impression you give is that you’re articulate and express yourself logically, you might seem like a coldhearted serial killer, so acting cogent is probably not a good idea." }
+        argument_low += { +"You should probably act sad at a friend’s funeral, rather than focusing on expressing yourself clearly and persuasively." }
 
-        argument_high += { +"" }
+        argument_high += { +"A person who is cogent would come across as convincing and logical, which would help you prove that you aren’t guilty of killing your friend." }
+        argument_high += { +"Being cogent does not seem like a quality a crazed killer would have, since murderers are usually not persuasive and logical." }
 
         example += { +"Your article provides cogent reading." }
         example += { +"But it has no cogent, lucid scheme to engage us" }
@@ -254,9 +261,11 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Something that is amicable is done or achieved in a polite or friendly way and without arguing" }
 
-        argument_low += { +"" }
+        argument_low += { +" If you walk around the funeral acting amicable and trying to behave in a friendly manner towards everyone, you might not seem sad enough." }
+        argument_low += { +"A funeral is hardly a place for socializing and being polite and amicable, so this seems like inappropriate behavior." }
 
-        argument_high += { +"" }
+        argument_high += { +"Being amicable, or friendly and without conflict, is always appropriate behaviour, so this seems like the right way to act" }
+        argument_high += { +" If you come across as amicable and the detective thinks that you’re friendly and polite, she might be less likely to see you as a suspect." }
 
         example += { +"In spite of their disagreement they parted on amicable terms" }
         example += { +" I can tell you that the meeting was professional, efficient and amicable." }
@@ -276,9 +285,11 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Being lugubrious means being sad and serious." }
 
-        argument_low += { +"" }
+        argument_low += { +"If you are lugubrious, you might seem exaggeratedly sad, which may come across as fake." }
+        argument_low += { +"Although mourners at a funeral should definitely seem sad, being lugubrious and acting excessively gloomy might not be very convincing." }
 
-        argument_high += { +"" }
+        argument_high += { +"Anyone attending a friend’s funeral would be expected to be lugubrious, since the death of a friend ought to make you sad" }
+        argument_high += { +"It is a social expectation that people attending a funeral are lugubrious and act mournful." }
 
         example += { +"his face looked even more lugubrious than usual" }
         example += { +"Just because I’m a bit down today doesn’t mean I’m in a lugubrious mood!" }
@@ -298,9 +309,11 @@ val funeralDeckEnglish = deck {
 
         definition += { +"Somebody who is disconsolate is very unhappy and disappointed." }
 
-        argument_low += { +"" }
+        argument_low += { +"If you’re so upset that you can’t be consoled, it might seem like you’re putting on an act to fake being disconsolate." }
+        argument_low += { +"Appearing disconsolate and acting extremely upset if you haven’t been on good terms with your friend might be hard to do convincingly." }
 
-        argument_high += { +"" }
+        argument_high += { +"Anyone who cared a lot about their friend would be disconsolate at their funeral, so this seems like the most appropriate behaviour to display." }
+        argument_high += { +"If you had just lost a very close friend, you would be so grief stricken that you would be impossible to console, so being disconsolate seems like appropriate behavior. " }
 
         example += { +"she left Fritz looking disconsolate" }
         example += { +"The disconsolate players left for home without a trophy." }

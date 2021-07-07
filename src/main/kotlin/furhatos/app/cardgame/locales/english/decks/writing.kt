@@ -184,7 +184,7 @@ val writingDeckEnglish = deck {
         image = "writing.jpg"
         name = "Hackneyed"
         def = "being hackneyed"
-        indef = "a hackneyed substance"  // this is an example, I am not sure how it will turn out. When we finish the first deck we will decide how to tread adjectives and adverbs and verbs
+        indef = "a hackneyed substance"
 
         gramclass = "adjective"
 

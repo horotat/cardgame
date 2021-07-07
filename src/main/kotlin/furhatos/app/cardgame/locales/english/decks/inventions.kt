@@ -463,6 +463,7 @@ val inventionsDeckEnglish = deck {
             }
         }
 
+        /**
         card {
             id = "bicycle"
             truth = 1817
@@ -493,5 +494,8 @@ val inventionsDeckEnglish = deck {
                 }
             }
         }
+        */
+
+
     }
 }

@@ -78,11 +78,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         }
         is_less_than = {
             +"is not as important as"
-            +"is less determining than"
         }
         is_more_than = {
-            +"makes a better person than"
-            +"is a more more important personality trait"
             +"makes a person be a better colleague compared to"
         }
     }

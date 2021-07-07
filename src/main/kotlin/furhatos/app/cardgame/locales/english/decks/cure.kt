@@ -17,7 +17,7 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
+val cureDeckEnglish = deck {
 
     imgFolder = "cure"
     name = "Pick a Potion!"
@@ -26,7 +26,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     input {
         singular += "Potion label"
 
-        min_def += options("the worst", "the unsafest") / options("label", "one", "")
+        min_def += options("the worst", "the least curable") / options("label", "one", "")
         max_def += options("the") / options("best", "safest") / options(
             "label",
             "one",
@@ -36,54 +36,54 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
         is_min_def += options("may be", "might be", "could be", "is") / min_def
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
-        is_less_than += "lives in colder weather than"
-        is_less_than += "is not as warm tolerant as"
-        is_less_than += "is not as hot living as"
-        is_less_than += "likes less temperature more than"
+        is_less_than += "is less safe than"
+        is_less_than += "is not as safe as"
+        is_less_than += "sounds less safe than"
+        is_less_than += "seems to be less trustable"
 
-        is_more_than += "lives in warmer weather than"
-        is_more_than += "is not as cold tolerant as"
-        is_more_than += "likes warmth more than"
+        is_more_than += "sounds safer than"
+        is_more_than += "is safer than"
+        is_more_than += "sounds more curable than"
     }
 
     output {
         purpose = {
             random {
-                +"Oh no... Your friend just got sick and you do not recognize any of the bottles in their medicin cabinet. Rank them from most to least useful based on the words on their etiquette."
+                +"Oh no... Your friend just got sick and you do not recognize any of the bottles in their medinin cabinet. Rank them from most to least useful based on the words on their etiquette."
             }
         }
         singular = {
-            +"animal"
+            +"Potion"
         }
         min_def = {
             random {
-                +"the animal living in the coldest climate"
-                +"the most low temperature tolerant one"
+                +"the least curable label"
+                +"the least safe one"
             }
         }
         max_def = {
             random {
-                +"the least cold tolerant one"
-                +"the animal living in the warmest climate"
+                +"the most curable potion"
+                +"the most useful potion"
             }
         }
         is_min = {
             random {
-                +"is the animal living in the coldest environment compared to others"
-                +"is the coldest living one"
+                +"is the label showing the minimum curability"
+                +"shows the least curable potion"
             }
         }
         is_max = {
             random {
-                +"is the animal living in the warmest climate compared to the others"
-                +"is warmest living climate one"
+                +"is the label showing the most curable medicin"
+                +"shows the highest curability"
             }
         }
         is_less_than = {
-            +"tolerates colder weather compared to"
+                +"is less curable than"
         }
         is_more_than = {
-            +"lives in warmer place than"
+            +"is more curable than"
         }
     }
 

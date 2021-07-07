@@ -272,7 +272,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
 
     card {
         id = "panacea"
-        truth = 0
+        truth = 5
         image = "question-mark.png"
         name = "Panacea"
         def = "the panacea"

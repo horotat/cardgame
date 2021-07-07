@@ -19,9 +19,9 @@ import furhatos.util.Language
 
 val funeralDeckEnglish = deck {
 
-    imgFolder = "writing"
-    name = "Writing Review"
-    unitLabel = " °importance"
+    imgFolder = "funeral"
+    name = "Sorry for your loss!"
+    unitLabel = " °appropriateness"
 
     input {
         singular += "writing"
@@ -40,14 +40,10 @@ val funeralDeckEnglish = deck {
         is_less_than += "is not as warm tolerant as"
         is_less_than += "is not as hot living as"
         is_less_than += "likes less temperature more than"
-        is_less_than += "wants a chillier temperature compared to"
-        is_less_than += "lives in sauna in the eyes of the"
 
         is_more_than += "lives in warmer weather than"
         is_more_than += "is not as cold tolerant as"
         is_more_than += "likes warmth more than"
-        is_more_than += "doesn't like cold as much as"
-        is_more_than += "would freeze where lives the"
     }
 
     output {
@@ -151,7 +147,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "exultant"
         truth = 0
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Exultant"
         def = "being exultant"
         indef = "an exultant person"
@@ -177,7 +173,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "ebullient"
         truth = 1
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Ebullient"
         def = "being ebullient"
         indef = "an ebullient person"
@@ -201,7 +197,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "cogent"
         truth = 2
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Cogent"
         def = "being cogent"
         indef = "a cogent person"
@@ -225,7 +221,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "amicable"
         truth = 3
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Amicable"
         def = "being amicable"
         indef = "an amicable person"
@@ -249,7 +245,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "lugubrious"
         truth = 4
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Lugubrious"
         def = "being lugubrious"
         indef = "a lugubrious person"
@@ -273,7 +269,7 @@ val funeralDeckEnglish = deck {
     card {
         id = "disconsolate"
         truth = 5
-        image = "question-mark.png"
+        image = "funeral.jpg"
         name = "Disconsolate"
         def = "being disconsolate"
         indef = "a disconsolate person"

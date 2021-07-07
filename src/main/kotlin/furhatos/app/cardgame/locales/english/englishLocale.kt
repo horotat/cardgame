@@ -22,7 +22,7 @@ import furhatos.util.Language
 
 val englishLocale = locale(Language.ENGLISH_US) {
 
-    decks = listOf(writingDeckEnglish, colleagueDeckEnglish , cureDeckEnglish, funeralDeckEnglish, devDeckEnglish)  // todo: the order of decks appearing
+    decks = listOf(writingDeckEnglish, colleagueDeckEnglish , cureDeckEnglish, funeralDeckEnglish, kingDeckEnglish)  // todo: the order of decks appearing
 
     input {
         ask_about_deck += "what do you think about @deck"

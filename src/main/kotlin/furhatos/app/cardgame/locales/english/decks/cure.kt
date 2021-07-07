@@ -19,35 +19,31 @@ import furhatos.util.Language
 
 val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEnglish, then add it to the listof decks
 
-    imgFolder = "writing"
-    name = "Writing Review"
-    unitLabel = " °importance"
+    imgFolder = "cure"
+    name = "Pick a Potion!"
+    unitLabel = " °trust"
 
     input {
-        singular += "writing"
+        singular += "Potion label"
 
-        min_def += options("the coldest climate living") / options("animal", "one", "")
-        max_def += options("the") / options("warmest climate living", "hottest climate living") / options(
-            "animal",
+        min_def += options("the worst", "the unsafest") / options("label", "one", "")
+        max_def += options("the") / options("best", "safest") / options(
+            "label",
             "one",
             ""
         )
 
-        is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
+        is_min_def += options("may be", "might be", "could be", "is") / min_def
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
         is_less_than += "lives in colder weather than"
         is_less_than += "is not as warm tolerant as"
         is_less_than += "is not as hot living as"
         is_less_than += "likes less temperature more than"
-        is_less_than += "wants a chillier temperature compared to"
-        is_less_than += "lives in sauna in the eyes of the"
 
         is_more_than += "lives in warmer weather than"
         is_more_than += "is not as cold tolerant as"
         is_more_than += "likes warmth more than"
-        is_more_than += "doesn't like cold as much as"
-        is_more_than += "would freeze where lives the"
     }
 
     output {
@@ -151,7 +147,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "noxious"
         truth = 0
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Noxious"
         def = "being noxious"
         indef = "a noxious substance"
@@ -176,7 +172,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "noisome"
         truth = 1
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Noisome"
         def = "being noisome"
         indef = "a noisome substance"
@@ -200,7 +196,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "luscious"
         truth = 2
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Luscious"
         def = "being luscious"
         indef = "a luscious substance"
@@ -225,7 +221,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "inoculation"
         truth = 3
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Inoculation"
         def = "the inoculation"
         indef = "an inoculation "
@@ -249,7 +245,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "palliate"
         truth = 4
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Palliate"
         def = "to palliate"
         indef = "palliate"
@@ -273,7 +269,7 @@ val cureDeckEnglish = deck {  // todo: change the name pf the Deck to ***DeckEng
     card {
         id = "panacea"
         truth = 5
-        image = "question-mark.png"
+        image = "elixir.jpg"
         name = "Panacea"
         def = "the panacea"
         indef = "a panacea"

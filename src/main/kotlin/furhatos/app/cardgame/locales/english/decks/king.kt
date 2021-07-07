@@ -17,11 +17,11 @@ import furhatos.nlu.common.Yes
 import furhatos.nlu.intent
 import furhatos.util.Language
 
-val jobsDeckEnglish = deck {
+val kingDeckEnglish = deck {
 
-    imgFolder = "writing"
-    name = "Writing Review"
-    unitLabel = " °importance"
+    imgFolder = "king"
+    name = "King Admiration"
+    unitLabel = " °respect"
 
     input {
         singular += "writing"
@@ -151,7 +151,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "vituperate"
         truth = 0
-        image = "question-mark.png"
+        image = "king.png"
         name = "Vituperate"
         def = "to vituperate"
         indef = "vituperate"
@@ -174,7 +174,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "disparage"
         truth = 1
-        image = "question-mark.png"
+        image = "king.png"
         name = "Disparage"
         def = "to disparage"
         indef = "disparage"
@@ -196,7 +196,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "eclectic"
         truth = 2
-        image = "question-mark.png"
+        image = "king.png"
         name = "Eclectic"
         def = "being eclectic"
         indef = "an eclectic person"
@@ -219,7 +219,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "contrite"
         truth = 3
-        image = "question-mark.png"
+        image = "king.png"
         name = "Contrite"
         def = "being contrite"
         indef = "a contrite person"
@@ -241,7 +241,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "tout"
         truth = 4
-        image = "question-mark.png"
+        image = "king.png"
         name = "Tout"
         def = "to tout"
         indef = "tout"
@@ -263,7 +263,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "extol"
         truth = 5
-        image = "question-mark.png"
+        image = "king.png"
         name = "Extol"
         def = "to extol"
         indef = "extol"
@@ -285,7 +285,7 @@ val jobsDeckEnglish = deck {
     card {
         id = "adulate"
         truth = 6
-        image = "question-mark.png"
+        image = "king.png"
         name = "Adulate"
         def = "to adulate"
         indef = "adulate"

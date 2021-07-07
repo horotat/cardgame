@@ -172,25 +172,25 @@ val funeralDeckEnglish = deck {
     }
 
     card {
-        id = ""
+        id = "excited"
         truth = 1
         image = "funeral.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Excited"
+        def = "being excited"
+        indef = "an excited person"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "excited"
+        input += "being excited"
 
-        definition += { +"" }
+        definition += { +"Being excited means feeling or showing happiness and enthusiasm" }
 
-        argument_low += { +"" }
+        argument_low += { +"Being excited at a funeral could be offensive towards the people grieving. " }
 
-        argument_high += { +"" }
+        argument_high += { +"If you are excited while everyone else is sad, you are sure to stand out." }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"I'm really excited at the prospect of working abroad." }
+        example += { +"The children were excited about opening their presents." }
     }
 
     card {
@@ -218,25 +218,25 @@ val funeralDeckEnglish = deck {
     }
 
     card {
-        id = ""
+        id = "glad"
         truth = 3
         image = "funeral.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Glad"
+        def = "being glad"
+        indef = "a glad person"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "glad"
+        input += "being glad"
 
-        definition += { +"" }
+        definition += { +"Someone who is glad is pleased or happy" }
 
-        argument_low += { +"" }
+        argument_low += { +"It might seem inappropriate to be glad at your friends funeral." }
 
-        argument_high += { +"" }
+        argument_high += { +"If everyone else is sad, they might need someone to cheer them up." }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"She was glad when the meeting was over." }
+        example += { +"He was glad he'd come." }
     }
 
     card {
@@ -288,25 +288,25 @@ val funeralDeckEnglish = deck {
     }
 
     card {
-        id = ""
+        id = "unhappy"
         truth = 6
         image = "funeral.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Unhappy"
+        def = "being unhappy"
+        indef = "an unhappy person"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "unhappy"
+        input += "being unhappy"
 
-        definition += { +"" }
+        definition += { +"Being unhappy means not being happy or being sad. " }
 
-        argument_low += { +"" }
+        argument_low += { +"You could also be unhappy for something minor, so it might not seem like you are sad enough. " }
 
-        argument_high += { +"" }
+        argument_high += { +"A funeral is not a happy gathering, so it could be appropriate to be unhappy." }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"This story has an unhappy ending" }
+        example += { +"I didn't realize but he was deeply unhappy at that time." }
     }
 
     card {

@@ -194,25 +194,24 @@ val cureDeckEnglish = deck {
     }
 
     card {
-        id = ""
+        id = "harmless"
         truth = 2
         image = "elixir.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Harmless"
+        def = "being harmless"
+        indef = "a harmless substance"
+        gramclass = "adjective"
 
-        input += ""
-        input += ""
+        input += "harmless"
+        input += "being harmless"
 
-        definition += { +"" }
+        definition += { +"Something harmless is unable or unlikely to cause damage or harm" }
 
-        argument_low += { +"" }
+        argument_low += { +"If it is harmless, it probably won't help.  " }
 
-        argument_high += { +"" }
+        argument_high += { +"Something harmless won't make anything worse. " }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"The bacteria is harmless to humans." }
     }
 
     card {
@@ -288,25 +287,25 @@ val cureDeckEnglish = deck {
     }
 
     card {
-        id = ""
+        id = "remedy"
         truth = 6
         image = "elixir.jpg"
-        name = ""
-        def = ""
-        indef = ""
-        gramclass = ""
+        name = "Remedy"
+        def = "the remedy"
+        indef = "a remedy"
+        gramclass = "noun"
 
-        input += ""
-        input += ""
+        input += "remedy"
+        input += "the remedy"
 
-        definition += { +"" }
+        definition += { +"A remedy is a treatment or medicine to cure a disease or reduce pain that is not very serious" }
 
-        argument_low += { +"" }
+        argument_low += { +"Remedies only work against diseases that are not so serious. " }
 
-        argument_high += { +"" }
+        argument_high += { +"A remedy is a sort of cure, so it should make an ailment better." }
 
-        example += { +"" }
-        example += { +"" }
+        example += { +"He took a herbal remedy for his hay fever" }
+        example += { +"an excellent home remedy for sore throats" }
     }
 
     card {

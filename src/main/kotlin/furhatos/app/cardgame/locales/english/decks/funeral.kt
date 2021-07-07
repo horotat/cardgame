@@ -147,31 +147,6 @@ val funeralDeckEnglish = deck {
 
     }
 
-    // template: you can copy and paste the one below for all of them. It's a clean version without the comments.
-
-    card {
-        id = "lion"
-        truth = 0
-        image = "question-mark.png"
-        name = "Lion"
-        def = "the lion"
-        indef = "a lion"
-        gramclass = ""
-
-        input += "lion"
-        input += "the lion"
-
-        definition += { +"" }
-
-        example += { +"" }
-
-        argument_low += { +"" }
-
-        argument_high += { +"" }
-
-        example += { +"" }
-    }
-
     // Start the deck here:
     card {
         id = "exultant"

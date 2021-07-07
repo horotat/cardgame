@@ -24,19 +24,18 @@ val funeralDeckEnglish = deck {
     unitLabel = " °appropriateness"
 
     input {
-        singular += "writing"
+        singular += "behaviour"
 
-        min_def += options("the coldest climate living") / options("animal", "one", "")
-        max_def += options("the") / options("warmest climate living", "hottest climate living") / options(
-            "animal",
-            "one",
+        min_def += options("the most inappropriate") / options("behaviour", "one", "")
+        max_def += options("the") / options("most appropriate behaviour", "best way of behaving") / options(
+            "in a funeral",
             ""
         )
 
-        is_min_def += options("may be", "might be", "could be", "is") / min_def  // ask: what are these (/) for?
+        is_min_def += options("may be", "might be", "could be", "is") / min_def
         is_max_def += options("may be", "might be", "could be", "is") / max_def
 
-        is_less_than += "lives in colder weather than"
+        is_less_than += "is less appropriate than"
         is_less_than += "is not as warm tolerant as"
         is_less_than += "is not as hot living as"
         is_less_than += "likes less temperature more than"

@@ -100,7 +100,7 @@ val funeralDeckEnglish = deck {
         class AskExample(): Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card" )
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card", "could you give me an example of the @card", "can you give me an example of the word @card" )
             }
         }
 
@@ -170,7 +170,7 @@ val funeralDeckEnglish = deck {
         example += { +"he waved to the exultant crowds" }
         example += { +"They were exultant over their victory." }
     }
-
+/*
     card {
         id = "excited"
         truth = 1
@@ -192,8 +192,9 @@ val funeralDeckEnglish = deck {
         example += { +"I'm really excited at the prospect of working abroad." }
         example += { +"The children were excited about opening their presents." }
     }
+*/
 
-    card {
+ /*   card {
         id = "ebullient"
         truth = 2
         image = "funeral.jpg"
@@ -217,6 +218,10 @@ val funeralDeckEnglish = deck {
         example += { +"Charlie’s ebullient attitude made him a favorite in the office." }
     }
 
+  */
+
+
+
     card {
         id = "glad"
         truth = 3
@@ -239,7 +244,9 @@ val funeralDeckEnglish = deck {
         example += { +"He was glad he'd come." }
     }
 
-    card {
+
+
+  /*  card {
         id = "cogent"
         truth = 4
         image = "funeral.jpg"
@@ -262,6 +269,8 @@ val funeralDeckEnglish = deck {
         example += { +"Your article provides cogent reading." }
         example += { +"But it has no cogent, lucid scheme to engage us" }
     }
+
+   */
 
     card {
         id = "amicable"
@@ -287,6 +296,8 @@ val funeralDeckEnglish = deck {
         example += { +" I can tell you that the meeting was professional, efficient and amicable." }
     }
 
+
+
     card {
         id = "unhappy"
         truth = 6
@@ -309,6 +320,7 @@ val funeralDeckEnglish = deck {
         example += { +"I didn't realize but he was deeply unhappy at that time." }
     }
 
+/*
     card {
         id = "lugubrious"
         truth = 7
@@ -332,6 +344,10 @@ val funeralDeckEnglish = deck {
         example += { +"his face looked even more lugubrious than usual" }
         example += { +"Just because I’m a bit down today doesn’t mean I’m in a lugubrious mood!" }
     }
+
+ */
+
+
 
     card {
         id = "disconsolate"

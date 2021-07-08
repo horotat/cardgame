@@ -103,7 +103,7 @@ val writingDeckEnglish = deck {
         class AskExample(): Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?" )
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card", "could you give me an example of the @card", "can you give me an example of the word @card" )
             }
         }
 
@@ -204,7 +204,7 @@ val writingDeckEnglish = deck {
     }
 
 
-    card {
+   /* card {
         id = "trite"
         truth = 1
         image = "writing.jpg"
@@ -226,6 +226,8 @@ val writingDeckEnglish = deck {
         example += { +"this point may now seem obvious and trite" }
         example += { +"She seemed bored and asked trite questions" }
     }
+
+    */
 
     card {
         id = "unexciting"
@@ -250,7 +252,7 @@ val writingDeckEnglish = deck {
     }
 
 
-    card {
+ /*   card {
         id = "derivative"
         truth = 3
         image = "writing.jpg"
@@ -272,7 +274,7 @@ val writingDeckEnglish = deck {
         example += { +"His work was so derivative that it lacked any originality." }
         example += { +"She didn’t contribute anything new; her work was completely derivative." }
     }
-
+*/
 
     card {
         id = "prosaic"
@@ -297,7 +299,7 @@ val writingDeckEnglish = deck {
         example += { +"prosaic language can't convey the experience" }
     }
 
-    card {
+   /* card {
         id = "acceptable"
         truth = 5
         image = "writing.jpg"
@@ -319,7 +321,9 @@ val writingDeckEnglish = deck {
         example += { +"It is perfectly acceptable for you as an employee to say no." }
     }
 
+    */
 
+/*
     card {
         id = "perspicuous"
         truth = 6
@@ -343,6 +347,10 @@ val writingDeckEnglish = deck {
         example += { +"it provides simpler and more perspicuous explanations than its rivals" }
     }
 
+ */
+
+
+
     card {
         id = "interesting"
         truth = 7
@@ -365,7 +373,7 @@ val writingDeckEnglish = deck {
         example += { +"The article raises several interesting questions." }
     }
 
-    card {
+  /*  card {
         id = "adroit"
         truth = 8
         image = "writing.jpg"
@@ -388,6 +396,7 @@ val writingDeckEnglish = deck {
         example += { +"She became adroit at dealing with difficult questions." }
     }
 
+   */
 
     card {
         id = "peerless"

@@ -96,7 +96,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         class AskExample(): Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card" )
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card", "could you give me an example of the @card", "can you give me an example of the word @card" )
             }
         }
 
@@ -187,7 +187,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"His clumsy fingers couldn't untie the knot." }
     }
 
-    card {
+  /*  card {
         id = "callow"
         truth = 2
         image = "work.jpg"
@@ -211,6 +211,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"The callow basketball player missed an incredibly easy shot." }
     }
 
+   */
+
     card {
         id = "indolent"
         truth = 3
@@ -233,7 +235,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"they were indolent and addicted to a life of pleasure" }
         example += { +"Because I enjoy being indolent, there is nothing I find more pleasant than relaxing in bed." }
     }
-
+/*
     card {
         id = "utilitarian"
         truth = 4
@@ -257,7 +259,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"The farm is a rather utilitarian building set just beyond another group of trees." }
         example += { +"This site has shed some of its more fancy handles since we last reviewed it, becoming more utilitarian." }
     }
-
+*/
     card {
         id = "competent"
         truth = 5
@@ -279,7 +281,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"He's very competent in his work." }
         example += { +"She is highly competent at her job." }
     }
-
+/*
     card {
         id = "shrewd"
         truth = 6
@@ -326,7 +328,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"She's very thorough and conscientious." }
     }
 
-
+*/
     card {
         id = "punctilious"
         truth = 8

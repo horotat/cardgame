@@ -99,7 +99,7 @@ val cureDeckEnglish = deck {
         class AskExample(): Intent() {
             var card: CardEntity? = null
             override fun getExamples(lang: Language): List<String> {
-                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card" )
+                return listOf("can you use @card in a sentence?", "can you use @card in context?", "How do you use @card in a sentence?", "give an example of @card", "how to use @card in a sentence?", "give me an example of @card", "could you give me an example of the @card", "can you give me an example of the word @card" )
             }
         }
 
@@ -143,7 +143,7 @@ val cureDeckEnglish = deck {
 
     }
 
-    // Start the deck here:
+
     card {
         id = "noxious"
         truth = 0
@@ -169,6 +169,8 @@ val cureDeckEnglish = deck {
         example += { +"They died from inhaling noxious fumes." }
     }
 
+
+/*
     card {
         id = "noisome"
         truth = 1
@@ -192,6 +194,7 @@ val cureDeckEnglish = deck {
         example += { +"As soon as I opened the refrigerator, the noisome scent of bad meat hit my nose. " }
         example += { +"The air is infected with noisome gases." }
     }
+ */
 
     card {
         id = "harmless"
@@ -213,7 +216,7 @@ val cureDeckEnglish = deck {
 
         example += { +"The bacteria is harmless to humans." }
     }
-
+/*
     card {
         id = "luscious"
         truth = 3
@@ -237,6 +240,8 @@ val cureDeckEnglish = deck {
         example += { +"I wanted to take a bite of the luscious apple." }
         example += { +"Because the bread smelled luscious, Tom decided to go into the bakery." }
     }
+
+ */
 
     card {
         id = "inoculation"
@@ -262,6 +267,7 @@ val cureDeckEnglish = deck {
         example += { +"After inoculation with the 2nd vaccine the animals' temperature will go up." }
     }
 
+    /*
     card {
         id = "palliate"
         truth = 5
@@ -286,6 +292,9 @@ val cureDeckEnglish = deck {
         example += { +" They tried to palliate the hardship of their lives." }
     }
 
+     */
+
+
     card {
         id = "remedy"
         truth = 6
@@ -307,6 +316,8 @@ val cureDeckEnglish = deck {
         example += { +"He took a herbal remedy for his hay fever" }
         example += { +"an excellent home remedy for sore throats" }
     }
+
+
 
     card {
         id = "panacea"

@@ -46,7 +46,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
     output {
         purpose = {
             random {
-                +"You are starting a new project with new collegues tomorrow. Rank from most to least the qualities you hope that your collegues have."
+                +"You are starting a new project with new colleague tomorrow. Rank from most to least the qualities you hope that your colleague have."
             }
         }
         singular = {
@@ -55,12 +55,12 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         min_def = {
             random {
                 +"the worst personality trait"
-                +"the loswest charachter quality in a colleague"
+                +"the lowest character quality in a colleague"
             }
         }
         max_def = {
             random {
-                +"the most likable charachter quality of a colleague"
+                +"the most likable character quality of a colleague"
                 +"the best personality trait of a colleague"
             }
         }

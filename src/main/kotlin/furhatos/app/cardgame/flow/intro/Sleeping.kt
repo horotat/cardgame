@@ -35,7 +35,7 @@ val Sleeping: State = state(Parent) {
             furhat.setDefaultMicroexpression()
             furhat.gesture(Gestures.OpenEyes, priority = 1, async = false)
             // todo: start the log
-            dialogLogger.startSession()
+            dialogLogger.startSession(cloudToken = "33890fdd-a150-45b3-9166-d291df80c5d6")
             goto(Greeting)
         }
     }

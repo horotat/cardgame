@@ -12,7 +12,7 @@ import furhatos.nlu.common.RequestRepeat
 val Discussing = state(Playing) {
 
     onEntry {
-        furhat.listen()
+        furhat.listen(timeout= 8000)
     }
 
     onEvent<ActionAttendCard>(instant = true) {

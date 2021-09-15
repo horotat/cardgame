@@ -186,8 +186,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
 
         example += { +"His clumsy fingers couldn't untie the knot." }
     }
-
-  /*  card {
+/*
+   card {
         id = "callow"
         truth = 2
         image = "work.jpg"
@@ -210,8 +210,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"Mark was just a callow youth of 16 when he arrived in Paris" }
         example += { +"The callow basketball player missed an incredibly easy shot." }
     }
+*/
 
-   */
 
     card {
         id = "indolent"
@@ -235,6 +235,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"they were indolent and addicted to a life of pleasure" }
         example += { +"Because I enjoy being indolent, there is nothing I find more pleasant than relaxing in bed." }
     }
+
+
 /*
     card {
         id = "utilitarian"
@@ -260,6 +262,7 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"This site has shed some of its more fancy handles since we last reviewed it, becoming more utilitarian." }
     }
 */
+
     card {
         id = "competent"
         truth = 5
@@ -281,6 +284,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"He's very competent in his work." }
         example += { +"She is highly competent at her job." }
     }
+
+
 /*
     card {
         id = "shrewd"
@@ -306,6 +311,8 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"It was a shrewd move to buy your house just before property prices started to rise." }
     }
 
+ */
+/*
     card {
         id = "thorough"
         truth = 7
@@ -328,7 +335,11 @@ val colleagueDeckEnglish = deck {  // todo: change the name pf the Deck to ***De
         example += { +"She's very thorough and conscientious." }
     }
 
-*/
+ */
+
+
+
+
     card {
         id = "punctilious"
         truth = 8

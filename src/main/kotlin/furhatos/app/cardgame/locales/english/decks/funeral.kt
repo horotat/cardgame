@@ -170,7 +170,7 @@ val funeralDeckEnglish = deck {
         example += { +"he waved to the exultant crowds" }
         example += { +"They were exultant over their victory." }
     }
-/*
+
     card {
         id = "excited"
         truth = 1
@@ -192,9 +192,9 @@ val funeralDeckEnglish = deck {
         example += { +"I'm really excited at the prospect of working abroad." }
         example += { +"The children were excited about opening their presents." }
     }
-*/
 
- /*   card {
+
+    card {
         id = "ebullient"
         truth = 2
         image = "funeral.jpg"
@@ -218,10 +218,10 @@ val funeralDeckEnglish = deck {
         example += { +"Charlie’s ebullient attitude made him a favorite in the office." }
     }
 
-  */
 
 
 
+/*
     card {
         id = "glad"
         truth = 3
@@ -243,10 +243,10 @@ val funeralDeckEnglish = deck {
         example += { +"She was glad when the meeting was over." }
         example += { +"He was glad he'd come." }
     }
+*/
 
-
-
-  /*  card {
+/*
+    card {
         id = "cogent"
         truth = 4
         image = "funeral.jpg"
@@ -270,8 +270,10 @@ val funeralDeckEnglish = deck {
         example += { +"But it has no cogent, lucid scheme to engage us" }
     }
 
-   */
+ */
 
+
+/*
     card {
         id = "amicable"
         truth = 5
@@ -295,7 +297,7 @@ val funeralDeckEnglish = deck {
         example += { +"In spite of their disagreement they parted on amicable terms" }
         example += { +" I can tell you that the meeting was professional, efficient and amicable." }
     }
-
+*/
 
 
     card {
@@ -344,8 +346,10 @@ val funeralDeckEnglish = deck {
         example += { +"his face looked even more lugubrious than usual" }
         example += { +"Just because I’m a bit down today doesn’t mean I’m in a lugubrious mood!" }
     }
-
+    
  */
+
+
 
 
 

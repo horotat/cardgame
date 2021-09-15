@@ -228,7 +228,7 @@ val writingDeckEnglish = deck {
     }
 
     */
-
+/*
     card {
         id = "unexciting"
         truth = 2
@@ -251,8 +251,9 @@ val writingDeckEnglish = deck {
         example += { +"Some people might find the life we live here unexciting" }
     }
 
+*/
 
- /*   card {
+    card {
         id = "derivative"
         truth = 3
         image = "writing.jpg"
@@ -274,7 +275,9 @@ val writingDeckEnglish = deck {
         example += { +"His work was so derivative that it lacked any originality." }
         example += { +"She didn’t contribute anything new; her work was completely derivative." }
     }
-*/
+
+
+
 
     card {
         id = "prosaic"
@@ -299,7 +302,9 @@ val writingDeckEnglish = deck {
         example += { +"prosaic language can't convey the experience" }
     }
 
-   /* card {
+
+/*
+   card {
         id = "acceptable"
         truth = 5
         image = "writing.jpg"
@@ -321,7 +326,7 @@ val writingDeckEnglish = deck {
         example += { +"It is perfectly acceptable for you as an employee to say no." }
     }
 
-    */
+*/
 
 /*
     card {
@@ -346,8 +351,8 @@ val writingDeckEnglish = deck {
         example += { +"These essential points should be plainly expressed, in a style familiar and perspicuous to all." }
         example += { +"it provides simpler and more perspicuous explanations than its rivals" }
     }
+*/
 
- */
 
 
 
@@ -373,7 +378,7 @@ val writingDeckEnglish = deck {
         example += { +"The article raises several interesting questions." }
     }
 
-  /*  card {
+    card {
         id = "adroit"
         truth = 8
         image = "writing.jpg"
@@ -396,8 +401,12 @@ val writingDeckEnglish = deck {
         example += { +"She became adroit at dealing with difficult questions." }
     }
 
-   */
 
+
+
+
+
+/*
     card {
         id = "peerless"
         truth = 9
@@ -422,5 +431,7 @@ val writingDeckEnglish = deck {
         example += { +"a peerless performance" }
         example += { +"a peerless cartoonist" }
     }
+*/
+
 
 }

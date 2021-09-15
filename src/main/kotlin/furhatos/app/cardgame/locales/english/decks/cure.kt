@@ -170,7 +170,9 @@ val cureDeckEnglish = deck {
     }
 
 
+
 /*
+
     card {
         id = "noisome"
         truth = 1
@@ -194,7 +196,7 @@ val cureDeckEnglish = deck {
         example += { +"As soon as I opened the refrigerator, the noisome scent of bad meat hit my nose. " }
         example += { +"The air is infected with noisome gases." }
     }
- */
+*/
 
     card {
         id = "harmless"
@@ -240,8 +242,8 @@ val cureDeckEnglish = deck {
         example += { +"I wanted to take a bite of the luscious apple." }
         example += { +"Because the bread smelled luscious, Tom decided to go into the bakery." }
     }
+*/
 
- */
 
     card {
         id = "inoculation"
@@ -267,7 +269,7 @@ val cureDeckEnglish = deck {
         example += { +"After inoculation with the 2nd vaccine the animals' temperature will go up." }
     }
 
-    /*
+/*
     card {
         id = "palliate"
         truth = 5
@@ -291,9 +293,7 @@ val cureDeckEnglish = deck {
         example += { +"The drugs palliate pain but have no effect on inflammation." }
         example += { +" They tried to palliate the hardship of their lives." }
     }
-
-     */
-
+*/
 
     card {
         id = "remedy"

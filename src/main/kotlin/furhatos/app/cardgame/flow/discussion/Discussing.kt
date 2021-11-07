@@ -31,6 +31,8 @@ val Discussing = state(Playing) {
     }
 
     onResponse<RequestRepeat> {
+        /*
+        **/
         furhat.ask(furhat.dialogHistory.utterances.last().toUtterance())
     }
 
